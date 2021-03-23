@@ -1,0 +1,208 @@
+/* media query for bigger screens*/
+@media screen and (max-width: 1399px) and (min-width: 1000px){
+    .row, .people-comments{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
+
+/* media query for phone and bigger phones */
+@media screen and (max-width: 501px){
+    nav{
+        display: none;
+    }
+    .intro>h1{
+        font-size: 2.2em;
+    }
+    .hero{
+        margin-top: 90px;
+    }
+    .web-info>h1{
+        font-size: 2rem;
+    }
+    .card-outro{
+        width: 100% !important;
+        height: 100%;
+    }
+    .card-outro>h1{
+        font-size: 1.5rem;
+    }
+    .card-container, outro-card{
+        margin: 90px 0px !important;
+    }
+    .card{
+        width: 100% !important;
+        height: 100%;
+        overflow: hidden;
+    }
+    .card-content{
+        display: flex;
+        flex-direction: column !important;
+    }
+    .passport>img{
+        margin-bottom: -40px;
+        margin-left: -90px;
+    }
+    .comment-card{
+        overflow-x: scroll;
+    }
+    .people-comments{
+        flex-direction: column;
+    }
+    .topic-outline{
+        padding: 2.5em;
+        margin-bottom: 20px;
+    }
+    .topic-outline>h1{
+        font-size: 2em;
+        padding-bottom: 12px;
+        text-align-last: center;
+    }
+    .banner-image{
+        display: none;
+    }
+    .info-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .smaller-card{
+        margin-top: -50px;
+        padding: 15px;
+    }
+    .smaller-card>h1{
+        font-size: 40px;
+    }
+    .row{
+        grid-template-columns: auto;
+        grid-row-gap: 10px;
+        margin: 0px !important;
+    }
+    .footer-grid{
+        margin-bottom: 80px;
+        display: grid;
+        grid-template-columns: auto;
+        margin-left: -20px !important;
+    }
+    .second-grid{
+        margin-top: 30px;
+    }
+
+}
+
+
+/* media query for tablets only! */
+@media screen and (max-width: 780px) and (min-width: 502px) {
+    nav{
+        display: none;
+    }
+    .intro>h1{
+        font-size: 2.2em;
+    }
+    .hero{
+        margin-top: 90px;
+    }
+    .web-info>h1{
+        font-size: 2rem;
+    }
+    .card-outro{
+        width: auto !important;
+        height: 100%;
+        margin: 20px;
+    }
+    .card-outro>h1{
+        font-size: 1.5rem;
+    }
+    .card-container{
+        margin: 90px 20px !important;
+    }
+    .card{
+        width: 100% !important;
+        height: 100%;
+        overflow: hidden;
+    }
+    .card-content{
+        display: flex;
+        flex-direction: column !important;
+    }
+    .passport>img{
+        margin-left: -90px;
+    }
+    .port-card{
+        overflow-x: scroll;
+    }
+    .people-comments{
+        flex-direction: column;
+    }
+    .topic-outline{
+        padding: 2.5em;
+        margin-bottom: 20px;
+    }
+    .topic-outline>h1{
+        font-size: 2em;
+        padding-bottom: 12px;
+        text-align-last: center;
+    }
+    .banner-image{
+        display: none;
+    }
+    .info-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .smaller-card{
+        margin-top: -120px !important;
+        padding: 25px;
+        z-index: 9999;
+    }
+    .smaller-card>h1{
+        font-size: 40px;
+    }
+    .row{
+        grid-template-columns: auto;
+        grid-row-gap: 10px;
+        margin: 0px !important;
+    } 
+    .footer-grid{
+        margin-bottom: 80px;
+        display: grid;
+        grid-template-columns: auto;
+        margin-left: -20px !important;
+    }
+    .second-grid{
+        margin-top: 25px !important;
+    }
+  }
+@media screen and (max-width: 1003px) and (min-width: 781px){ 
+    nav{
+        display: none;
+    }
+}
+
+/* media query for extra small phones */
+@media screen and (max-width: 1111px) and (min-width: 781px){ 
+    .card-outro{
+        width: auto !important;
+        height: 100%;
+        margin: 20px;
+    }
+    .banner-image{
+        width: 100%;
+    }
+    .port-card{
+        width: 100%;
+    }
+    .people-comments{
+        flex-direction: column;
+    }
+    .row{
+        grid-template-columns: auto auto;
+    }
+}
+
+/* media query for phone and bigger phones */
+@media screen and (max-width: 400px){
+    .flex-container>a{
+        padding: 1em;
+    }
+
+}
