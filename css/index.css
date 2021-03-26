@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Lato&display=swap');
+
 *{
     margin: 0;
     box-sizing: border-box !important;
-    font-family: 'Lato', sans-serif;}
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+}
 
 body{
     background-color: var(--dark-mode-bg-color);
@@ -30,13 +33,12 @@ body{
     --card-outro-bg:  purple;
     --outro-button-bg: black;
     /* linear-gradient(to right, #ff0099, #493240); */
-
 }
 
 /* for white mode */
 .white-mode{
     --dark-mode-bg-color: #fff;
-    --dark-mode-text-color: black; 
+    --dark-mode-text-color: #031926; 
     --dark-mode-border-line: #1d976c;
     --span-h3-dark-mode: #1d976c;
     --banner-button: #1d976c;
@@ -60,7 +62,6 @@ body{
     align-content: center;
     justify-content: flex-start;
 }
-
 .logo>img{
     width: 65px;
     height: 65px;
@@ -76,10 +77,9 @@ body{
     padding: .7em;
 }
 .top-nav :is(a){
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 600;
-    word-spacing: 4px;
-    letter-spacing: 1px;
+    margin-right: 6px;
     color: var(--top-nav-color);
 }
 .top-nav :is(a):hover{
@@ -89,44 +89,50 @@ body{
     font-size: 20px;
     color: rgba(15, 199, 231, 2) !important;
 }
+
 /* mobile nav bar */
 .contain{
     justify-content: center;
     display: flex;
 }
 .flex-container{
-    width: 90%;
+    width: 95vw;
     display: flex;
-    bottom: 2%;
-    padding-top: .75rem;
-    padding-bottom: .75rem;
+    bottom: 2.1%;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
     z-index: 999999;
     position: fixed;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
     overflow: hidden;
     place-items: center;
     justify-content: space-evenly;
     background-color: var(--flex-container-bg-color);
-    border-radius: 1rem;
-    height: 4em;
+    border-radius: 1.25rem;
+    max-height: 5em;
 }
 a>ion-icon{
-    font-size: 20px !important;
-    margin-left: 10px;
+    position: relative;
+    font-size: 1.75em;
+    margin-left: 8.2px;
 }
 a>h4{
-    font-size: 1em;
+    font-size: 1rem;
+    margin-top: 8px;
+    font-weight: 500;
+    line-height: 1rem;
 }
 .flex-container>a{
     display: block;
-    padding: 2em;
+    /* padding: 2em; */
 }
-.flex-container>a:hover{
+.flex-container>a:focus-within{
     text-decoration: underline;
-    border-bottom: solid var(--dark-mode-border-line) 5px;
+    border-top: solid var(--dark-mode-border-line) 3px;
 }
-.bulb{
-    color: #1d976c !important;
-}
+
+
 /* laptop's navbar */
 .navigation {
     justify-content: flex-end;
@@ -173,30 +179,34 @@ a{
 div>h3{
     text-align: center !important;
     word-spacing: 3px;
-    font-size: 1.25em;
+    font-size: 1.3em;
     font-weight: bold;
     color: var(--dark-mode-text-color);
 }
 .intro>h1{
-    font-size: 4.5rem;
+    font-size: 4rem;
+    font-style: normal;
     font-weight: bold;
     text-align: center;
     word-spacing: 3px;
 }
 h3>span{
-    color: var(--span-h3-dark-mode) ; 
+    color: var(--span-h3-dark-mode); 
     text-align: center;
     
 }
-.hero-button>button{
+button{
     padding: .75rem 2.5rem;
-    background: var(--banner-button);  
-    color: var(--dark-mode-text-color);
     cursor: pointer;
     border-radius: .75rem !important;
+    transition: all .3s ease-in-out;
+    border: none;
+}
+.hero-button>button{
+    background: var(--banner-button);  
+    color: var(--dark-mode-text-color);
     font-weight: 500;
     font-size: 16px;
-    transition: all .3s ease-in-out;
 }
 button:hover{
     transform: translateY(-5px);
@@ -221,8 +231,9 @@ button:hover{
 }
 .web-info>h1{
     text-align: center;
-    font-weight: 550;
-    font-size: 3rem;
+    font-weight: 600;
+    word-spacing: 3px;
+    font-size: 2.5rem;
     margin-bottom: 45px;
 }
 .row{
@@ -296,15 +307,14 @@ button:hover{
     padding: 3em;
 }
 .smaller-card>h1{
-    font-size: 45px;
+    font-size: 2.4em;
 }
 .smaller-card>p{
-    margin-top: 25px;
+    margin-top: 20px;
     font-size: 18px;
 }
 .smaller-card>button{
     margin-top: 25px;
-    cursor: pointer;
     border-radius: .75rem !important;
     font-weight: 600;
     font-size: 16px;
@@ -335,8 +345,8 @@ button:hover{
     padding: 2em;
 }
 .topic-outline>h1{
-    font-size: 3rem;
-    margin-bottom: 10px;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
 }
 .topic-outline>p{
     font-size: 18px;
@@ -361,7 +371,8 @@ button:hover{
 /* tools i use section  */
 .tools-used>h1{
     text-align: center;
-    font-size: 2.8rem;
+    font-size: 2.5rem;
+    font-style: normal;
     margin-top: 70px;
     padding-bottom: 20px;
 }
@@ -380,22 +391,20 @@ button:hover{
     height: 300px;
     margin: 120px auto;
     overflow: hidden;
-    padding: 2.9em;
+    padding: 1.6em;
     border-radius: .9rem;
     background: var(--card-outro-bg); 
 }
 .card-outro>button{
     background-color: var(--outro-button-bg);
     color: var(--dark-mode-text-color);
-    cursor: pointer;
-    border-radius: .75rem !important;
     font-weight: 600;
     font-size: 16px;
     transition: all .3s ease-in-out;
     padding: .75rem 2.5rem;
 }
 .card-outro>h1{
-    font-size: 3rem;
+    font-size: 2.3rem;
     padding-bottom: .4em;
 }
 .card-outro>p{
@@ -410,8 +419,8 @@ footer{
     margin-bottom: 50px;
 }
 .footer-image{
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
     margin-bottom: 30px;
 }
@@ -422,18 +431,18 @@ footer{
 }
 /* footer contents */
 .first-grid>h2{
-    font-size: 29px;
-    margin-bottom: 25px;
+    font-size: 24px;
+    font-style: normal;
+    margin-bottom: 20px;
 }
 .first-grid>p{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    word-spacing: 3px;
-    font-size: 17px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    word-spacing: 2px;
 }
 .first-grid>span{
     color: var(--footer-text-color);
-    font-size: 19px;
+    font-size: 17px;
 }
 .first-grid>span:hover{
     text-decoration: underline !important;
@@ -450,7 +459,8 @@ footer{
 }
 .second-grid>a{
     margin-bottom: 29px;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: normal !important;
     list-style-type: none;
 }
 .second-grid>a:hover{
@@ -491,11 +501,15 @@ div>h2{
 
 
 /* <<<<<<<<<<<<<<< helpful classes */
+.bulb{
+    color: #1d976c !important;
+}
+
 .carousel {
     margin: 40px auto;
     max-width: 65rem;
 }
-  
+
 .carousel-cell {
     width: 23%;
     height: 200px;
@@ -509,55 +523,55 @@ div>h2{
     max-width: 100%;
     opacity: 0;
     -webkit-transition: opacity 0.4s;
-            transition: opacity 0.4s;
+    transition: opacity 0.4s;
 }
 .carousel-cell-image.flickity-lazyloaded,
 .carousel-cell-image.flickity-lazyerror {
   opacity: 1;
 }
   
-    .svg-container{
-        background-color: var(--svg-container-bg);
-        width: 4em;
-        height: 4em;
-        border-radius: 1rem;
-        padding: .8em;
-        display: flex;
-        align-items: center;
-        justify-items: center;
-        place-items: center;
-        margin-right: 20px;
-    }
-    .svg-icon {
-        width: 3em !important;
-        height: 3em;
-    }
+.svg-container{
+    background-color: var(--svg-container-bg);
+    width: 4em;
+    height: 4em;
+    border-radius: 1rem;
+    padding: .8em;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    place-items: center;
+    margin-right: 20px;
+}
+.svg-icon {
+    width: 3em !important;
+    height: 3em;
+}
 
-    .svg-icon path,
-    .svg-icon polygon,
-    .svg-icon rect {
-        fill: var(--dark-mode-text-color);
-    }
-    
-    .svg-icon circle {
-        stroke: var(--dark-mode-text-color);
-        stroke-width: 1;
-    }
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+    fill: var(--dark-mode-text-color);
+}
 
-  /* other screen css for helpers classes */
-  @media (min-width: 1400px) {
+.svg-icon circle {
+    stroke: var(--dark-mode-text-color);
+    stroke-width: 1;
+}
+
+/* other screen css for helpers classes */
+@media (min-width: 1400px) {
     .container {
-      width: 1300px;
-      margin-right: auto;
-      margin-left: auto;
+        width: 1300px;
+        margin-right: auto;
+        margin-left: auto;
     }
-  }
+}
 
-  @media (min-width: 1000px) {
+@media (min-width: 1000px) {
     .flex-container{
         display: none !important;
     }
-  }
+}
 
   /* end of helpful tools >>>>>>>>>>>>>>>>>>>>> */
 
