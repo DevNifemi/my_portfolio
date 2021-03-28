@@ -18,16 +18,39 @@
     .containers {
       width: 1170px;
     }
-  }
+}
+:root{
+    --card-outro-bg: purple;
+}
+.white-mode{
+    --card-outro-bg: #1d976c;
+}
+
 .about-me-banner{
     display: flex;
     justify-content: space-evenly;
     margin-top: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     overflow: hidden;
 }
 .about-me-outline{
+    margin-top: 50px;
+    align-items: center;
+    place-items: center;
     padding-right: 4em;
+    flex: 2;
+}
+.about-me-banner-image{
+    background-color: rgb(202, 39, 202);
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    flex: 4;
+    /* padding: 4em; */
+    max-width: 350px;
+    max-height: 400px;
+    overflow: hidden;
+    border-radius: 1em;
 }
 div>h1{
     font-size: 3em;
@@ -41,14 +64,13 @@ div>h4{
 p{
     word-spacing: 5px;
 }
-.about-me-banner-image{
-    background-color: rgb(202, 39, 202);
-    display: flex;
-    justify-content: center;
-    place-items: center;
-    max-width: 400px;
-    max-height: 400px;
-    overflow: hidden;
+.tags{
+    margin-top: 30px !important;
+    padding: .25em;
+    background-color: var(--card-outro-bg);
+    margin: 0 auto;
+    text-align: center;
+    width: 13em;
     border-radius: 1em;
 }
 .journey-outline{
@@ -61,15 +83,6 @@ p{
 .span{
     border-bottom: 2px solid purple;
     padding-bottom: 8px !important;
-}
-.tag{
-    margin-top: 50px !important;
-    padding: .25em;
-    background-color: purple;
-    margin: 0 auto;
-    text-align: center;
-    width: 13em;
-    border-radius: 1em;
 }
 .text-image { 
     float: left;  
@@ -84,12 +97,15 @@ p{
     margin-bottom: 50px;
 } 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px){
     .about-me-banner{
         flex-direction: column;
     }
     .about-me-banner-image{
         margin-top: 30px;
+    }
+    .about-me-banner{
+        margin-top: 60px;
     }
     .text-image{
         float: none;
@@ -98,5 +114,9 @@ p{
     .story-text{
         text-align: left;
         margin-top: 20px;
+    }
+    .about-me-outline{
+        margin-top: 10px;
+        margin-bottom: 30px;
     }
 }

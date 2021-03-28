@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- CSS ONLY -->
     <link href="css/index.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/logo-white-bg.png" type="image/x-icon">
     <link rel="stylesheet" href="css/media-query.css">
     <link rel="stylesheet" href="css/about-page.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- page title  -->
     <title>About</title>
 </head>
 <body>
     <!-- top navigation -->
-    <div class="top-nav">
-        <ion-icon class="icon" name="logo-twitter"></ion-icon> <a href="http://"> Give my portfolio <span style="color: white !important;"> a retweet</span></a>
+    <div class="top-nav"> <a href="http://"> 
+        Give my portfolio<span style="color: white !important;"> a retweet</span></a>
+        <ion-icon class="icon" name="logo-twitter"></ion-icon>
     </div>
 
     <!-- navbar for laptop screen -->
@@ -31,11 +33,9 @@
             <li><a class="nav-links" href="about.html">About</a></li>
             <li><a class="nav-links" href="project.html">Projects</a></li>
             <li><a class="nav-links" href="#">Blog</a></li>
-            <div class="nav-links">
-              <label for="color-switch">Mode
-              <input type="checkbox" id="color-switch"></input>
-              </label>
-            </div>            
+            <div class="nav-links" >
+                <ion-icon class="color-switch" name="bulb"></ion-icon>
+            </div>
         </ul>
     </nav>
 
@@ -43,40 +43,86 @@
    <div class="contain">
     <div class="flex-container">
         <a href="index.html" class="home-button">
-            <ion-icon name="home-outline"></ion-icon>
+            <ion-icon name="home"></ion-icon>
             <h4>Home</h4>
         </a>
 
         <a href="about.html" class="about-button">
-            <ion-icon name="happy-outline"></ion-icon>
+            <ion-icon name="happy"></ion-icon>
             <h4>About</h4>
         </a>
 
-        <a href="project.html" projects-button">
-            <ion-icon name="construct-outline"></ion-icon>
+        <a href="project.html" class="projects-button">
+            <ion-icon name="construct"></ion-icon>
             <h4>Projects</h4>
         </a>
 
-        <a class="blog-button">
-            <ion-icon name="book-outline"></ion-icon>
-            <h4>Blogs</h4>
+        <a style="cursor: pointer !important;" onclick="toggleMenu()" class="menu-button">
+            <ion-icon name="grid"></ion-icon>
+            <h4>Menu</h4>
         </a>
     </div>
    </div>
+
+   <!-- sidebar navigation for mobile screens -->
+   <div class="sidebar unactive">
+       <div class="close-menu">
+           <span class="menu-btn" onclick="untoggleMenu()">
+            <ion-icon name="close"></ion-icon>
+            <p>Exit Menu</p>
+           </span>
+           <div class="nav-links">
+            <ion-icon id="color-mobile" class="color-switch" name="bulb"></ion-icon>
+          </div>
+       </div>
+
+       <header>
+           <img class="footer-image" src="img/logo-white-bg.png" alt="sidebar-img">
+           <h2>Abiose Imran</h2>
+       </header>
+
+       <ul>
+           <li><a href="index.html"><ion-icon name="home-outline"></ion-icon>Home</a></li>
+           <li><a href="about.html"><ion-icon name="happy-outline"></ion-icon>About</a></li>
+           <li><a href="project.html"><ion-icon name="construct-outline"></ion-icon>Projects</a></li>
+           <li><a href=""><ion-icon name="book-outline"></ion-icon>Blog</a></li>
+           <li><a href="contact.html"><ion-icon name="paper-plane-outline"></ion-icon>Hire me now</a></li>
+       </ul>
+
+       <div class="icon-list">
+        <a href="https://web.facebook.com/abioseimran">
+            <ion-icon class="footer-icon" name="logo-facebook"></ion-icon>
+        </a>
+
+        <a href="https://twitter.com/abioseimran">
+            <ion-icon class="footer-icon" name="mail"></ion-icon>
+        </a>
+        <a href="https://twitter.com/abioseimran">
+            <ion-icon class="footer-icon" name="logo-github"></ion-icon>
+        </a>
+        <a href="https://twitter.com/abioseimran">
+            <ion-icon class="footer-icon" name="logo-twitter"></ion-icon>
+        </a>
+        
+        <a href="https://twitter.com/abioseimran">
+            <ion-icon class="footer-icon" name="logo-whatsapp"></ion-icon>
+        </a> 
+       </div>
+   </div>
     
-   <div class="tag animate__animated animate__bounce animate__repeat-3">
+   <div class="tags animate__animated animate__bounce animate__repeat-3">
        <h2>Hi There!😊🥰</h2>
    </div>
    <div class="about-me-banner containers">
        <div class="about-me-outline">
         <h1>About Me</h1>
-        <h4>I am lorem ipsum inder lavish tellex lampard</h4>
+        <h4>I am Abiose Imran Oluwanifemi</h4>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi assumenda excepturi iure! Corrupti quaerat, qui, dolorem accusantium odio perferendis, inventore fuga corporis necessitatibus delectus consectetur. Tempora esse perferendis quos officia.</p>
        </div>
 
-       <!-- <div class="about-me-banner-image">
-           <img src="img/logo-transparent.png" alt="">
-       </div> -->
+       <div class="about-me-banner-image">
+           <img src="img/pizza-5352320_640.png" alt="">
+       </div>
    </div>
 
    <div class="journey-outline containers">

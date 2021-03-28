@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- CSS only -->
     <link href="css/index.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/logo-white-bg.png" type="image/x-icon">
     <link rel="stylesheet" href="css/media-query.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- page title -->
     <title>Abiose Imran | Frontend Developer</title>
 </head>
 <body>
 
     <!-- top navigation -->
-    <div class="top-nav"> <a href="http://"> Give my portfolio <span style="color: white !important;"> a retweet</span></a>
+    <div class="top-nav"> <a href="http://"> 
+        Give my portfolio<span style="color: white !important;"> a retweet</span></a>
         <ion-icon class="icon" name="logo-twitter"></ion-icon>
     </div>
 
-     <!-- navbar for laptop screen -->
+    <!-- navbar for laptop screen -->
     <nav class="navbar container">
         <div class="logo">
            <img src="img/logo-white-bg.png" alt="logo">
@@ -31,7 +32,7 @@
             <li><a class="nav-links" href="project.html">Projects</a></li>
             <li><a class="nav-links" href="#">Blog</a></li>
             <div class="nav-links" >
-                <ion-icon id="color-switch" name="bulb"></ion-icon>
+                <ion-icon class="color-switch" name="bulb"></ion-icon>
             </div>
         </ul>
     </nav>
@@ -54,11 +55,57 @@
             <h4>Projects</h4>
         </a>
 
-        <a class="menu-button">
+        <a style="cursor: pointer !important;" onclick="toggleMenu()" class="menu-button">
             <ion-icon name="grid"></ion-icon>
             <h4>Menu</h4>
         </a>
     </div>
+   </div>
+
+   <!-- sidebar navigation for mobile screens -->
+   <div class="sidebar">
+       <div class="close-menu">
+           <span class="menu-btn" onclick="untoggleMenu()">
+            <ion-icon name="close"></ion-icon>
+            <p>Exit Menu</p>
+           </span>
+           <div class="nav-links">
+            <ion-icon id="color-mobile" class="color-switch" name="bulb"></ion-icon>
+          </div>
+       </div>
+
+       <header>
+           <img class="footer-image" src="img/logo-white-bg.png" alt="sidebar-img">
+           <h2>Abiose Imran</h2>
+       </header>
+
+       <ul>
+           <li><a href="index.html"><ion-icon name="home-outline"></ion-icon>Home</a></li>
+           <li><a href="about.html"><ion-icon name="happy-outline"></ion-icon>About</a></li>
+           <li><a href="project.html"><ion-icon name="construct-outline"></ion-icon>Projects</a></li>
+           <li><a href=""><ion-icon name="book-outline"></ion-icon>Blog</a></li>
+           <li><a href="contact.html"><ion-icon name="paper-plane-outline"></ion-icon>Hire me now</a></li>
+       </ul>
+
+       <div class="icon-list">
+        <a href="https://web.facebook.com/abioseimran">
+            <ion-icon class="footer-icon" name="logo-facebook"></ion-icon>
+        </a>
+
+        <a href="https://twitter.com/abioseimran">
+            <ion-icon class="footer-icon" name="mail"></ion-icon>
+        </a>
+        <a href="https://twitter.com/abioseimran">
+            <ion-icon class="footer-icon" name="logo-github"></ion-icon>
+        </a>
+        <a href="https://twitter.com/abioseimran">
+            <ion-icon class="footer-icon" name="logo-twitter"></ion-icon>
+        </a>
+        
+        <a href="https://twitter.com/abioseimran">
+            <ion-icon class="footer-icon" name="logo-whatsapp"></ion-icon>
+        </a> 
+       </div>
    </div>
 
     <!-- hero introduction -->
@@ -245,7 +292,6 @@
 
     <!-- tools used section -->
     <section>   
-
         <div class="tools-used">
             <h1>The Tools I Use</h1>
         </div>
@@ -284,13 +330,10 @@
 
     <!-- last home page card  -->
     <section class="outro-card">
-
         <div class="card-outro">
-            <!-- <div> -->
             <h1>Where should we start</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt deleniti impedit dolorum dolore, dolores exercitationem voluptatibus eveniet laborum possimus placeat rerum praesentium illo omnis itaque, beatae veritatis explicabo expedita officiis!</p>
             <button onclick="window.location.href='contact.html' ">Lorem Ipsum Dolor</button>
-        <!-- </div>   -->
             <div class="illustration">
             </div>
         </div>
@@ -332,6 +375,7 @@
             <a href="index.html">Home</a> 
             <a href="about.html">About</a> 
             <a href="project.html">Projects</a> 
+            <a href="contact.html">Contact</a> 
             <a href="">Blog</a>
         </ul>
       </div>   
@@ -344,7 +388,7 @@
 
 
     <!-- javascripts helper tools! -->
-    <script src="js/index.js"></script>
+    <script src="js/index.js" defer></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 

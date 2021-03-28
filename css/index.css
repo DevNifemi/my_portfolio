@@ -77,7 +77,7 @@ body{
     padding: .7em;
 }
 .top-nav :is(a){
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
     margin-right: 6px;
     color: var(--top-nav-color);
@@ -96,11 +96,11 @@ body{
     display: flex;
 }
 .flex-container{
-    width: 95vw;
+    width: 90vw;
     display: flex;
-    bottom: 2.1%;
-    padding-top: .8rem;
-    padding-bottom: .8rem;
+    bottom: 1.7%;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
     z-index: 999999;
     position: fixed;
     padding-left: 1rem !important;
@@ -114,7 +114,7 @@ body{
 }
 a>ion-icon{
     position: relative;
-    font-size: 1.75em;
+    font-size: 1.7em;
     margin-left: 8.2px;
 }
 a>h4{
@@ -132,6 +132,84 @@ a>h4{
     border-top: solid var(--dark-mode-border-line) 3px;
 }
 
+/* mobile navigation sidebar */
+.sidebar{
+    transition: all .6s ease-in-out;
+    position: fixed;
+    left: -260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* overflow-y: scroll; */
+    padding: 10px;
+    width: 260px;
+    top: 0;
+    height: 100%;
+    z-index: 9999999 !important;
+    background: var(--card-bg-color);
+}
+.close-menu{
+    display: flex;
+    align-items: center;
+}
+.menu-btn{
+    margin-left: 7px;
+    margin-right: 38px;
+    display: flex;
+    cursor: pointer;
+}
+.menu-btn:hover{
+    color: rgb(231, 14, 14);
+}
+.menu-btn p {
+    margin-top: -4px;
+    margin-left: 2px;
+}
+#color-mobile{
+    margin-left: 38px;
+    margin-top: 2px;
+}
+.sidebar header{
+    margin-top: 5px;
+    display: flex;
+    padding: 12px;
+    text-align: center;
+    align-items: center;
+    place-items: center;
+    line-height: 3px;
+}
+header h2{
+    font-size: 20px;
+    margin-top: -25px;
+    margin-left: 12px;
+}
+.sidebar ul li{
+    text-decoration: none;
+    list-style: none !important;
+}
+.sidebar ul li a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    line-height: 65px;
+    font-size: 16px;
+    transition: .4s;
+}
+.sidebar ul li:hover a{
+    padding-left: 10px;
+    text-decoration: underline;
+}
+.sidebar ul a ion-icon{
+    margin-right: 20px;
+}
+.sidebar .icon-list{
+    margin-top: 40px;
+    padding-left: 10px;
+}
+.sidebar .icon-list a ion-icon{
+    margin: 2px;
+}
 
 /* laptop's navbar */
 .navigation {
@@ -141,7 +219,7 @@ a>h4{
     margin-top: -70px; 
     margin-right: 10px;
 }
-#color-switch{
+.color-switch{
     margin-top: -6px;
     font-size: 30px;
 }
@@ -227,7 +305,7 @@ button:hover{
 
 /* information about skills and web  */
 .web-info{
-    margin-top: 60px;
+    margin-top: 80px;
 }
 .web-info>h1{
     text-align: center;
@@ -498,7 +576,36 @@ div>h2{
     font-weight: bold;
 }
 
-
+                    /* contact page css here !!!!! */
+.page-topic{
+    margin-bottom: 100px;
+    margin-top: 150px;
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.page-topic>h1{
+    font-size: 65px;
+    margin-bottom: 150px;
+}
+.page-topic>p{
+    margin-bottom: 20px;
+}
+.contact-me>a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: medium;
+    color: var(--footer-text-color);
+    transition: all .2s ease-out;
+}
+.contact-me>a:hover{
+    text-decoration: underline;
+    color: rgb(255, 208, 0);
+}
+.contact-me>p{
+    margin-bottom: 20px;
+}
 
 /* <<<<<<<<<<<<<<< helpful classes */
 .bulb{
@@ -509,9 +616,13 @@ div>h2{
     margin: 40px auto;
     max-width: 65rem;
 }
+.carousel>button{
+    background: none !important;
+    color: var(--dark-mode-text-color);
+}
 
 .carousel-cell {
-    width: 23%;
+    width: 33%;
     height: 200px;
     margin-right: 5px;
 }

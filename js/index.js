@@ -1,4 +1,4 @@
-const colorSwitch = document.getElementById('color-switch')
+const colorSwitch = document.querySelectorAll('.color-switch');
 let whiteMode = localStorage.getItem('whiteMode')
 
 const whiteModeOn =() =>{
@@ -14,18 +14,35 @@ const darkModeOn = () =>{
 
 if(whiteMode === "enabled"){
     whiteModeOn();
-    colorSwitch.classList.add('bulb')
+    colorSwitch.forEach(switchs => {
+        switchs.classList.add('bulb')
+    })
 }
 
-colorSwitch.addEventListener('click', ()=>{
-    whiteMode = localStorage.getItem('whiteMode');
-    if(whiteMode !== "enabled"){
-    colorSwitch.classList.add('bulb')
-    whiteModeOn()
-}
-else{
-    darkModeOn()
-    colorSwitch.classList.remove('bulb')
+for (const switchs of colorSwitch) {
+    switchs.addEventListener('click', ()=>{
+        whiteMode = localStorage.getItem('whiteMode');
+    
+        if(whiteMode !== "enabled"){
+            switchs.classList.add('bulb')
+            whiteModeOn()
+    }
+     else{
+        darkModeOn()
+            switchs.classList.remove('bulb')
+     }
+    
+    })
+  }
+    
 
+// toggle the menu side bar
+let navigation = document.querySelector('.sidebar')
+
+function toggleMenu(){
+    navigation.style.left = "0"
 }
-})
+
+function untoggleMenu(){
+    navigation.style.left = "-260px"
+}
