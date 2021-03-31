@@ -29,7 +29,7 @@
 .about-me-banner{
     display: flex;
     justify-content: space-evenly;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 70px;
     overflow: hidden;
 }
@@ -46,7 +46,6 @@
     justify-content: center;
     place-items: center;
     flex: 4;
-    /* padding: 4em; */
     max-width: 350px;
     max-height: 400px;
     overflow: hidden;
@@ -59,10 +58,12 @@ div>h1{
 div>h4{
     font-weight: 500;
     font-size: 1.5em;
+    letter-spacing: 1.1px;
     margin-bottom: 10px;
 }
 p{
-    word-spacing: 5px;
+    word-spacing: 6px;
+    letter-spacing: 1px;
 }
 .tags{
     margin-top: 30px !important;
@@ -81,7 +82,7 @@ p{
     margin-bottom: 30px;
 }
 .span{
-    border-bottom: 2px solid purple;
+    border-bottom: 2px solid var(--card-outro-bg);
     padding-bottom: 8px !important;
 }
 .text-image { 
@@ -102,14 +103,14 @@ p{
         flex-direction: column;
     }
     .about-me-banner-image{
-        margin-top: 30px;
+        margin-top: 20px;
     }
     .about-me-banner{
         margin-top: 60px;
     }
     .text-image{
         float: none;
-        margin: 0px;
+        margin: 0px ;
     }
     .story-text{
         text-align: left;
@@ -117,6 +118,13 @@ p{
     }
     .about-me-outline{
         margin-top: 10px;
-        margin-bottom: 30px;
+    }
+    div>h1{
+        font-size: 2.2em;
+    }
+    div>h4{
+        font-weight: 500;
+        font-size: 1.1em;
+        margin-bottom: 10px;
     }
 }

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="img/logo-white-bg.png" type="image/x-icon">
     <link rel="stylesheet" href="css/media-query.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- page title -->
     <title>Abiose Imran | Frontend Developer</title>
 </head>
@@ -15,9 +16,14 @@
 
     <!-- top navigation -->
     <div class="top-nav"> <a href="http://"> 
-        Give my portfolio<span style="color: white !important;"> a retweet</span></a>
+        Give my portfolio a retweet</span></a>
         <ion-icon class="icon" name="logo-twitter"></ion-icon>
     </div>
+
+    <!-- progress bar for scrolling -->
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+      </div>
 
     <!-- navbar for laptop screen -->
     <nav class="navbar container">
@@ -39,8 +45,8 @@
 
    <!-- navbar for mobile and tablet screens -->
    <div class="contain">
-    <div class="flex-container">
-        <a href="index.html" class="home-button">
+    <div class="flex-container  animate__animated animate__slideInLeft animate__delay-2s">
+        <a href="index.html" class="home-button selected">
             <ion-icon name="home"></ion-icon>
             <h4>Home</h4>
         </a>
@@ -250,9 +256,10 @@
 
                 <div class="smaller-card">
                     <h1>I'm Nifemi</h1>
-                    <p>I never sabi wetin i dey do, but na my fake portfolio be this cus i dey freestyle. Anyway ennjoy!! 👻🤥</p>
+                    <p>I’m a design minded front-end developer. I am open to learning new things and working with any set of teams.👻🤥</p>
                     <button onclick="window.location.href='contact.html' ">Let's have a talk</button>
                 </div>
+
             </div>
         </div>
     </div>
