@@ -54,10 +54,8 @@ window.onscroll = function() {scrollFunction()};
 const bar = document.querySelector("#myBar")
 
 function scrollFunction() {
-    console.log('hi');
     var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
     var scrollBottom = document.documentElement.scrollHeight - document.body.clientHeight || document.documentElement.clientHeight
     var scrolled = (scrollTop / scrollBottom) * 100
-    console.log(scrolled);
     bar.style.width = scrolled+"%";
   }

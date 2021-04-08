@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo-white-bg.png" type="image/x-icon">
     <!-- CSS only -->
     <link href="css/index.css" rel="stylesheet">
-    <link rel="shortcut icon" href="img/logo-white-bg.png" type="image/x-icon">
     <link rel="stylesheet" href="css/media-query.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -15,15 +15,16 @@
 <body>
 
     <!-- top navigation -->
-    <div class="top-nav"> <a href="http://"> 
+    <div class="top-nav">
+        <a href="http://"> 
         Give my portfolio a retweet</span></a>
         <ion-icon class="icon" name="logo-twitter"></ion-icon>
     </div>
 
     <!-- progress bar for scrolling -->
-        <div class="progress-container">
+    <div class="progress-container">
           <div class="progress-bar" id="myBar"></div>
-      </div>
+    </div>
 
     <!-- navbar for laptop screen -->
     <nav class="navbar container">
@@ -33,10 +34,10 @@
         </div>
 
         <ul class="navigation">
-            <li><a class="nav-links" href="index.html">Home</a></li>
             <li><a class="nav-links" href="about.html">About</a></li>
             <li><a class="nav-links" href="project.html">Projects</a></li>
             <li><a class="nav-links" href="#">Blog</a></li>
+            <li><a class="nav-links hire-now" href="contact.html">Hire me now</a></li>
             <div class="nav-links" >
                 <ion-icon class="color-switch" name="bulb"></ion-icon>
             </div>
@@ -45,7 +46,7 @@
 
    <!-- navbar for mobile and tablet screens -->
    <div class="contain">
-    <div class="flex-container  animate__animated animate__slideInLeft animate__delay-4s">
+    <div class="flex-container  animate__animated animate__slideInLeft animate__delay-3s">
         <a href="index.html" class="home-button selected">
             <ion-icon name="home"></ion-icon>
             <h4>Home</h4>
@@ -115,9 +116,9 @@
    </div>
 
     <!-- hero introduction -->
-    <div class="hero">   
+   <div class="hero">   
       <div>
-        <h3> <span>Design.</span>    Build.    Im<span>prove</span></h3>
+        <h3><span>Design.</span>   Build.    Im<span>prove</span></h3>
       </div>
 
       <div  class="intro">
@@ -129,12 +130,12 @@
         <button onclick="window.location.href='contact.html' ">Make it work!</button>
       </div>
 
-    </div>
+   </div>
 
     <!-- hero image -->
     <div class="img-container">
         <picture>
-            <source media="(max-width:649px)" srcset="">
+            <source media="(max-width:649px)" srcset="img/pizza-5352320_640.png">
             <img class="banner-image" src="img/project-stories.png" alt="banner-image">
           </picture>
     </div>
@@ -151,7 +152,7 @@
     </div>
 
     <!-- card content -->
-    <div class=" container">
+    <div class="container">
         <div class="row">
 
             <div class="col">
@@ -290,6 +291,11 @@
     
                 <div class="fourth-card">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, dolore quisquam! Dignissimos possimus aperiam cupiditate minima? Ipsam sed consequatur harum voluptatem fuga iure ex magni nam amet voluptates, sit dolore.
+                    <!-- <div class="commentor">
+                        <img class="footer-image" src="img/about-me.jpg" alt="">
+                        <h3>Jamiu Igbalajobi</h3>
+                        <p>Senior Software engineer at valueJet, travelBeta</p>
+                    </div> -->
                 </div> 
 
             </div> 
@@ -330,6 +336,11 @@
          <img class="carousel-cell-image"
            data-flickity-lazyload="img/logo-react.svg" alt="react" />
        </div>
+
+       <div class="carousel-cell">
+        <img class="carousel-cell-image"
+          data-flickity-lazyload="img/bootstrap-brands.svg" alt="react" />
+      </div>
 
 
      </div>

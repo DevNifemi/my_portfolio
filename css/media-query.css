@@ -96,16 +96,21 @@
         display: none !important;
     }
 
-/* contact page media for same screen  */
-.page-topic>h1{
-    font-size: 2.2em;
-    margin-bottom: 100px;
-}
-.page-topic{
-    margin-bottom: 110px;
-    margin-top: 70px;
-    text-align: center;
-}
+    /* contact page media  query for same screen  */
+    .page-topic>h1{
+        font-size: 2.2em;
+        margin-bottom: 100px;
+    }
+    .page-topic{
+        margin-bottom: 110px;
+        margin-top: 70px;
+        text-align: center;
+    }
+    /* project page media query for same screen */
+    .project-1{
+        display: grid;
+        grid-template-columns: auto !important;
+    }
 
 }
 

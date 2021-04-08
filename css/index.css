@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Lato&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap'); */
+
 *{
     margin: 0;
     box-sizing: border-box !important;
@@ -24,7 +25,7 @@ body{
     --carousel-bg: #303241;
     --comment-card-bg-color: #303241;
     --smaller-card-bg-color: rgb(29, 23, 23);
-    --flex-container-bg-color: #4c4a69;
+    --flex-container-bg-color: #3b385c;
     --comment-sect-bg-color: rgb(29, 23, 23);
     --svg-container-bg: #1A1C23;
     --top-nav-color: purple;
@@ -59,20 +60,7 @@ body{
     --progess-bg: #4caf50;
 }
 
-.logo{
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: flex-start;
-}
-.logo>img{
-    width: 65px;
-    height: 65px;
-    border-radius: 50%;
-    margin-right: 18px;
-    margin-top: 10px;
-    margin-left: 20px;
-}
+/* top navigation for all pages */
 .top-nav{
     display: flex;
     justify-content: center;
@@ -84,6 +72,7 @@ body{
     font-weight: 600;
     color: white !important;
     margin-right: 6px;
+    font-family: sans-serif !important;
 }
 .top-nav :is(a):hover{
     text-decoration: underline;
@@ -92,6 +81,7 @@ body{
     font-size: 20px;
     color: rgba(15, 199, 231, 2) !important;
 }
+
 
 /* mobile nav bar */
 .contain{
@@ -126,13 +116,13 @@ a>h4{
     font-weight: 500;
     line-height: 1rem;
 }
-.flex-container>a{
+.flex-container a{
     display: block;
-    /* padding-top: .7em; */
 }
 .selected{
     color: var(--active-color);
 }
+
 
 /* mobile navigation sidebar */
 .sidebar{
@@ -191,7 +181,6 @@ header h2{
 }
 .sidebar ul li a{
     display: block;
-    /* height: 100%; */
     width: 100%;
     box-sizing: border-box !important;
     line-height: 70px;
@@ -213,36 +202,69 @@ header h2{
     margin: 2px;
 }
 
+
 /* laptop's navbar */
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    font-size: 18px;
+    justify-content: flex-start;
+}
+.logo img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin-right: 16px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    margin-left: 20px;
+}
 .navigation {
     justify-content: flex-end;
     display: flex;
     list-style: none;
-    margin-top: -70px; 
-    margin-right: 10px;
 }
 .color-switch{
     margin-top: -6px;
     font-size: 30px;
 }
-
 a{
     text-decoration: none;
     font-weight: bold;
-    letter-spacing: 1px;
     color: var(--dark-mode-text-color);
+}
+.hire-now{
+    background: var(--card-bg-color);
+    border-radius: .7rem;
+    transition: .3s;
+}
+.hire-now:hover{
+    transform: translateY(-5px);
 }
 .nav-links{
     text-decoration: none;
     display: block;
-    padding: 1em;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;   
+    margin-right: .5em;
     cursor: pointer;
+    font-size: 17px;
     color: var(--dark-mode-text-color);;
 }
 .nav-links:hover{
     background-color: var(--card-bg-color);
     border-radius: .5rem;
 }
+
 
 /* banner or hero section */
 .hero{
@@ -264,7 +286,7 @@ div>h3{
     font-weight: bold;
     color: var(--dark-mode-text-color);
 }
-.intro>h1{
+.intro h1{
     font-size: 4rem;
     font-style: normal;
     font-weight: bold;
@@ -283,7 +305,7 @@ button{
     transition: all .3s ease-in-out;
     border: none;
 }
-.hero-button>button{
+.hero-button button{
     background: var(--banner-button);  
     color: var(--dark-mode-text-color);
     font-weight: 500;
@@ -292,6 +314,7 @@ button{
 button:hover{
     transform: translateY(-5px);
 }
+
 
 /* home page images section  */
 .img-container{
@@ -306,11 +329,12 @@ button:hover{
     border: 10px solid var(--span-h3-dark-mode);
 }
 
+
 /* information about skills and web  */
 .web-info{
     margin-top: 80px;
 }
-.web-info>h1{
+.web-info h1{
     text-align: center;
     font-weight: 600;
     word-spacing: 3px;
@@ -329,6 +353,7 @@ button:hover{
 }
 .col h2{
     font-size: 24px;
+    padding-bottom: 3px;
 }
 /* further services info  */
 .more-services{
@@ -338,25 +363,24 @@ button:hover{
     margin-top: 60px;
     cursor: pointer;
 }
-.more-services>a{
+.more-services a{
     font-size: 20px;
     font-weight: normal;
     padding-bottom: 8px;
-    border-bottom: solid var(--banner-button) 5px;
+    border-bottom: solid var(--banner-button) 3px;
     color: var(--dark-mode-text-color) !important;
     text-decoration: none;
     transition: all .3s ease-out;
 }
-.more-services>a:hover{
+.more-services a:hover{
     color: rgb(168, 51, 168) !important;
-    border-bottom: solid white 5px;
-    text-decoration: none !important;
-    
+    border-bottom: solid white 3px;
+    text-decoration: none !important;  
 }
+
 
 /* portfolio home page card */
 .card-container{
-    display: block;
     margin: 85px 50px !important;
     display: flex;
     justify-content: center;
@@ -364,9 +388,9 @@ button:hover{
 .card{
     width: 65rem;
     border-radius: .9rem !important;
-    height: 400px;
+    height: 363px;
     margin: 0 auto !important;
-    padding: 25px;
+    padding: 28px;
     background-color: var(--card-bg-color);
 }
 .card-content{
@@ -383,21 +407,21 @@ button:hover{
 .smaller-card{
     flex: 5;
     width: 100%;
-    height: 70%;
+    height: 80%;
     border-radius: .9rem;
     background-color: var(--smaller-card-bg-color);
     color: var(--dark-mode-text-color);
     padding: 3em;
 }
-.smaller-card>h1{
+.smaller-card h1{
     font-size: 2.4em;
 }
-.smaller-card>p{
-    margin-top: 20px;
+.smaller-card p{
+    margin-top: 23px;
     font-size: 18px;
 }
-.smaller-card>button{
-    margin-top: 25px;
+.smaller-card button{
+    margin-top: 35px;
     border-radius: .75rem !important;
     font-weight: 600;
     font-size: 16px;
@@ -407,6 +431,7 @@ button:hover{
     background: var(--small-card-button-color); 
     color: var(--dark-mode-bg-color);
 }
+
 
 /* people's comment section */
 .comments-card{
@@ -425,13 +450,13 @@ button:hover{
     display: flex;
     flex-direction: column;
     flex: 4;
-    padding: 2em;
+    padding: 1.5em;
 }
-.topic-outline>h1{
+.topic-outline h1{
     font-size: 2.5rem;
     margin-bottom: 15px;
 }
-.topic-outline>p{
+.topic-outline p{
     font-size: 18px;
 }
 /* section two of comment card  */
@@ -444,11 +469,10 @@ button:hover{
     background-color: var(--comment-card-bg-color);
     border-radius: .9rem;
     color: var(--dark-mode-text-color);
-    padding: 1.4em;
+    padding: 1.2em;
     display: inline-block;
     margin: 0 0 1em;
     width: 100%;
-
 }
 
 /* tools i use section  */
@@ -460,7 +484,7 @@ button:hover{
     padding-bottom: 20px;
 }
 .tools-list{
-    margin-bottom: 100px !important;
+    margin-bottom: 90px !important;
 }
 
 /* last card of home page  */
@@ -471,10 +495,12 @@ button:hover{
 }
 .card-outro{
     width: 65rem;
-    height: 300px !important;
     margin: 120px auto;
     overflow: hidden;
-    padding: 1.6em;
+    padding-left: 1.6em;
+    padding-right: 1.6em;
+    padding-top: 2em;
+    padding-bottom: 2em;
     border-radius: .9rem;
     background: var(--card-outro-bg); 
 }
@@ -486,11 +512,11 @@ button:hover{
     transition: all .3s ease-in-out;
     padding: .75rem 2.5rem;
 }
-.card-outro>h1{
+.card-outro h1{
     font-size: 2.3rem;
     padding-bottom: .4em;
 }
-.card-outro>p{
+.card-outro p{
     padding-bottom: 2em;
     font-size: 1em;
     word-spacing: 4px;
@@ -513,21 +539,21 @@ footer{
     grid-template-columns: 600px 200px;
 }
 /* footer contents */
-.first-grid>h2{
+.first-grid h2{
     font-size: 24px;
     font-style: normal;
     margin-bottom: 20px;
 }
-.first-grid>p{
+.first-grid p{
     margin-top: 10px;
     margin-bottom: 25px;
     word-spacing: 2px;
 }
-.first-grid>span{
+.first-grid span{
     color: var(--footer-text-color);
     font-size: 17px;
 }
-.first-grid>span:hover{
+.first-grid span:hover{
     text-decoration: underline !important;
     cursor: not-allowed;
 }
@@ -536,24 +562,20 @@ footer{
     display: flex;
     flex-direction: column;
 }
-.second-grid>h4{
+.second-grid h4{
     font-size: 19px;
     margin-bottom: 18px;
 }
-.second-grid>a{
+.second-grid a{
     margin-bottom: 29px;
     font-size: 16px;
     font-weight: normal !important;
     list-style-type: none;
 }
-.second-grid>a:hover{
+.second-grid a:hover{
     text-decoration: underline;
     color: blueviolet;
     cursor: cell;
-}
-.container>p{
-    margin-top: 40px !important;
-    margin-bottom: 40px;
 }
 .line-container{
     display: flex;
@@ -567,6 +589,7 @@ footer{
 }
 .copyright{
     margin-left: 5%;
+    margin-bottom: 50px;
 }
 .footer-icon{
     font-size: 28px !important;
@@ -590,11 +613,11 @@ div>h2{
     margin-right: auto;
     text-align: center;
 }
-.page-topic>h1{
+.page-topic h1{
     font-size: 65px;
     margin-bottom: 150px;
 }
-.page-topic>p{
+.page-topic p{
     padding: 0 10px;
     margin-bottom: 20px;
 }
@@ -614,6 +637,7 @@ div>h2{
     padding: 0 10px;
 }
 
+
 /* <<<<<<<<<<<<<<< helpful classes */
 .progress-container {
     position: fixed;
@@ -623,12 +647,11 @@ div>h2{
     height: 5px;
   }
 .progress-bar {
-    height: 5px;
+    height: 6px;
     background: var(--progess-bg);
     width: 0%;
     transition: all .3s ease-out;
 }
-
 .bulb{
     color: #1d976c !important;
 }
@@ -708,7 +731,7 @@ div>h2{
     stroke-width: 1;
 }
 
-/* other screen css for helpers classes */
+/* media queries for helpers classes */
 @media (min-width: 1400px) {
     .container {
         width: 1300px;

@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* container class */
+.containers {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto !important;
+  }
+  @media (min-width: 768px) {
+    .containers {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .containers {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .containers {
+      width: 1170px;
+    }
+}
+
+
+/* page css */
+.project{
+    display: grid;
+    grid-template-columns: 750px auto;
+    margin-top: 100px;
+}
+.image-container img{
+  max-width: 95%;
+  border-radius: .5em;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 1px -5px 15px 0px rgba(0,0,0,0.5);
+}
+.project-info{
+  margin: 50px auto !important;
+  width: 90%;
+  display: block;
+}
+.tag{
+    margin: 15px auto !important;
+    width: 90%;
+    display: block;
+}
+.tag span{
+    font-size: 12px;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-right: .75em;
+    padding-left: .75em;
+    margin-right: 1px;
+    border-radius: 1em;
+    background:  var(--banner-button);
+    transition: .5s;
+}
+.tag span:hover{
+    transform: translateY(6px);
+    background: var(--card-bg-color);
+}
+
+
+
+
+
+/* media query for project page  */
+@media screen and (max-width: 1030px){
+    .project{
+        margin-top: 90px !important;
+        grid-template-columns: auto;
+    }
+    .project-info{
+        margin: 20px auto !important;
+        width: 90%;
+        display: block;
+    }    
+    img{
+        display: block;
+        margin: 10px auto;
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 701px){
+
+}

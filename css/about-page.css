@@ -1,3 +1,11 @@
+:root{
+    --card-outro-bg: purple;
+}
+.white-mode{
+    --card-outro-bg: #1d976c;
+}
+
+/* container class */
 .containers {
     padding-right: 15px;
     padding-left: 15px;
@@ -18,12 +26,6 @@
     .containers {
       width: 1170px;
     }
-}
-:root{
-    --card-outro-bg: purple;
-}
-.white-mode{
-    --card-outro-bg: #1d976c;
 }
 
 .about-me-banner{
@@ -61,8 +63,8 @@ div>h4{
     letter-spacing: 1.1px;
     margin-bottom: 10px;
 }
-p{
-    word-spacing: 6px;
+.about-me-outline p{
+    word-spacing: 3px;
     letter-spacing: 1px;
 }
 .tags{
@@ -98,6 +100,7 @@ p{
     margin-bottom: 50px;
 } 
 
+/* media query for classes  */
 @media screen and (max-width: 700px){
     .about-me-banner{
         flex-direction: column;
