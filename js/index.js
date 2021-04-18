@@ -49,13 +49,15 @@ function untoggleMenu(){
 
 
 
-// page scrolling progress bar 
-window.onscroll = function() {scrollFunction()};
-const bar = document.querySelector("#myBar")
+// page scrolling progress bar
+
+document.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
-    var scrollBottom = document.documentElement.scrollHeight - document.body.clientHeight || document.documentElement.clientHeight
-    var scrolled = (scrollTop / scrollBottom) * 100
-    bar.style.width = scrolled+"%";
-  }
+    var scrollBottom = document.body.scrollHeight - document.documentElement.clientHeight
+    var scrolled = (scrollTop / scrollBottom) * 100 
+    document.querySelector("#myBar").style.width = scrolled + "%";
+}
+
+

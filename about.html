@@ -17,9 +17,15 @@
 <body>
 
     <!-- top navigation -->
-    <div class="top-nav"> <a href="http://"> 
-        Give my portfolio<span style="color: white !important;"> a retweet</span></a>
+    <div class="top-nav">
+        <a href="http://"> 
+        Give my portfolio a retweet</span></a>
         <ion-icon class="icon" name="logo-twitter"></ion-icon>
+    </div>
+
+    <!-- progress bar for scrolling -->
+    <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
     </div>
 
     <!-- navbar for laptop screen -->
@@ -32,7 +38,7 @@
         <ul class="navigation">
             <li><a class="nav-links" href="about.html">About</a></li>
             <li><a class="nav-links" href="project.html">Projects</a></li>
-            <li><a class="nav-links" href="#">Blog</a></li>
+            <li><a class="nav-links" href="blog.html">Blog</a></li>
             <li><a class="nav-links hire-now" href="contact.html">Hire me now</a></li>
             <div class="nav-links" >
                 <ion-icon class="color-switch" name="bulb"></ion-icon>
@@ -42,23 +48,23 @@
 
    <!-- navbar for mobile and tablet screens -->
    <div class="contain">
-    <div class="flex-container">
-        <a href="index.html" class="button">
+    <div class="flex-container  animate__animated animate__slideInLeft animate__delay-3s">
+        <a href="index.html" class="home-button">
             <ion-icon name="home"></ion-icon>
             <h4>Home</h4>
         </a>
 
-        <a href="about.html" class="button selected">
+        <a href="about.html" class="about-button selected">
             <ion-icon name="happy"></ion-icon>
             <h4>About</h4>
         </a>
 
-        <a href="project.html" class="button">
+        <a href="project.html" class="projects-button ">
             <ion-icon name="construct"></ion-icon>
             <h4>Projects</h4>
         </a>
 
-        <a style="cursor: pointer !important;" onclick="toggleMenu()" class="button">
+        <a style="cursor: pointer !important;" onclick="toggleMenu()" class="menu-button">
             <ion-icon name="grid"></ion-icon>
             <h4>Menu</h4>
         </a>
@@ -66,7 +72,7 @@
    </div>
 
    <!-- sidebar navigation for mobile screens -->
-   <div class="sidebar unactive">
+   <div class="sidebar">
        <div class="close-menu">
            <span class="menu-btn" onclick="untoggleMenu()">
             <ion-icon name="close"></ion-icon>
@@ -86,7 +92,7 @@
            <li><a href="index.html"><ion-icon name="home-outline"></ion-icon>Home</a></li>
            <li><a href="about.html"><ion-icon name="happy-outline"></ion-icon>About</a></li>
            <li><a href="project.html"><ion-icon name="construct-outline"></ion-icon>Projects</a></li>
-           <li><a href=""><ion-icon name="book-outline"></ion-icon>Blog</a></li>
+           <li><a href="blog.html"><ion-icon name="book-outline"></ion-icon>Blog</a></li>
            <li><a href="contact.html"><ion-icon name="paper-plane-outline"></ion-icon>Hire me now</a></li>
        </ul>
 
@@ -271,7 +277,7 @@
     </footer>
 
     <!-- javascripts helper tools! -->
-    <script src="js/index.js"></script>
+    <script src="js/index.js" defer></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>

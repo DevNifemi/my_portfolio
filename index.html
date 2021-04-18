@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/media-query.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
     <!-- page title -->
     <title>Abiose Imran | Frontend Developer</title>
 </head>
@@ -23,20 +24,20 @@
 
     <!-- progress bar for scrolling -->
     <div class="progress-container">
-          <div class="progress-bar" id="myBar"></div>
+          <div class="progress-bar" id="myBars"></div>
     </div>
 
     <!-- navbar for laptop screen -->
     <nav class="navbar container">
         <div class="logo">
-           <img src="img/logo-white-bg.png" alt="logo">
+           <img class="animate__animated animate__rotateIn" src="img/logo-white-bg.png" alt="logo">
            <a href="index.html">Abiose Imran</a>
         </div>
 
         <ul class="navigation">
             <li><a class="nav-links" href="about.html">About</a></li>
             <li><a class="nav-links" href="project.html">Projects</a></li>
-            <li><a class="nav-links" href="#">Blog</a></li>
+            <li><a class="nav-links" href="blog.html">Blog</a></li>
             <li><a class="nav-links hire-now" href="contact.html">Hire me now</a></li>
             <div class="nav-links" >
                 <ion-icon class="color-switch" name="bulb"></ion-icon>
@@ -46,7 +47,7 @@
 
    <!-- navbar for mobile and tablet screens -->
    <div class="contain">
-    <div class="flex-container  animate__animated animate__slideInLeft animate__delay-3s">
+    <div class="flex-container  animate__animated animate__slideInLeft animate__delay-2s">
         <a href="index.html" class="home-button selected">
             <ion-icon name="home"></ion-icon>
             <h4>Home</h4>
@@ -90,7 +91,7 @@
            <li><a href="index.html"><ion-icon name="home-outline"></ion-icon>Home</a></li>
            <li><a href="about.html"><ion-icon name="happy-outline"></ion-icon>About</a></li>
            <li><a href="project.html"><ion-icon name="construct-outline"></ion-icon>Projects</a></li>
-           <li><a href=""><ion-icon name="book-outline"></ion-icon>Blog</a></li>
+           <li><a href="blog.html"><ion-icon name="book-outline"></ion-icon>Blog</a></li>
            <li><a href="contact.html"><ion-icon name="paper-plane-outline"></ion-icon>Hire me now</a></li>
        </ul>
 
@@ -163,7 +164,7 @@
                 </div>
 
                 <div>
-                    <h2>Web Definition</h2>  
+                    <h2>Mobile Responsive</h2>  
                     <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. A eius, dolore error dolores laborum repudiandae! Impedit, architecto. Repudiandae pariatur aperiam quo a maxime cum adipisci voluptatibus, dolorum neque doloremque officiis!</p>
                 </div>
@@ -279,23 +280,46 @@
 
                 <div class="first-card">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore ad qui magni officia nostrum? Alias atqufe possimus maiores at, nihil, consequuntur ex mollitia odit, dicta deserunt enim quos numquam delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum iure praesentium, laboriosam asperiores, sapiente, sequi laborum cumque alias necessitatibus quae illum explicabo nam harum possimus voluptates molestiae quod quisquam? Sunt.
+                    <div class="commentor">  
+                        <img src="img/about-me.jpg" alt="">
+                        <div class="statements">
+                            <h3 class="c-name">John Doe</h3>
+                            <p>Senior Software engineer</p>
+                        </div>
+                    </div>      
                 </div>
 
                 <div class="second-card">
-                    Lorem ipsum dolor 
+                    Lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor
+                    <div class="commentor">  
+                        <img src="img/logo-transparent.png" alt="">
+                        <div class="statements">
+                            <h3 class="c-name">Abiose Imran</h3>
+                            <p>Senior Software engineer</p>
+                        </div>
+                    </div> 
                 </div> 
 
                 <div class="third-card">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Error provident distinctio temporibus esse vel? Praesentium assumenda voluptatem facere voluptates veniam atque pariatur, natus dicta eos cupiditate, corrupti possimus aspernatur quia?
+                    <div class="commentor">  
+                        <img src="img/logo-white-bg.png" alt="">
+                        <div class="statements">
+                            <h3 class="c-name">Kamal Habib</h3>
+                            <p>Managing Director</p>
+                        </div>
+                    </div> 
                 </div>
     
                 <div class="fourth-card">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, dolore quisquam! Dignissimos possimus aperiam cupiditate minima? Ipsam sed consequatur harum voluptatem fuga iure ex magni nam amet voluptates, sit dolore.
-                    <!-- <div class="commentor">
-                        <img class="footer-image" src="img/about-me.jpg" alt="">
-                        <h3>Jamiu Igbalajobi</h3>
-                        <p>Senior Software engineer at valueJet, travelBeta</p>
-                    </div> -->
+                    <div class="commentor">  
+                        <img src="img/pizza-5352320_640.png" alt="">
+                        <div class="statements">
+                            <h3 class="c-name">Avatar AAng</h3>
+                            <p>Senior Air Bender</p>
+                        </div>
+                    </div> 
                 </div> 
 
             </div> 
@@ -394,7 +418,7 @@
             <a href="about.html">About</a> 
             <a href="project.html">Projects</a> 
             <a href="contact.html">Contact</a> 
-            <a href="">Blog</a>
+            <a href="blog.html">Blog</a>
         </ul>
       </div>   
 
@@ -406,6 +430,19 @@
 
 
     <!-- javascripts helper tools! -->
+    <script>
+window.onscroll = function() {scrollFunction2()};
+var bars = document.querySelector("#myBars")
+
+function scrollFunction2() {
+    var scrollTops = document.body.scrollTop || document.documentElement.scrollTop;
+    var scrollValue1 = document.body.scrollHeight || document.documentElement.scrollHeight 
+    var scrollValue2 = document.documentElement.clientHeight && document.body.clientHeight
+    var scrollBottoms = scrollValue1 - scrollValue2
+    var scrolled = (scrollTops / scrollBottoms) * 100
+    bars.style.width = scrolled + "%";
+}
+    </script>
     <script src="js/index.js" defer></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>

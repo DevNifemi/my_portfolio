@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Lato&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap'); */
 
 *{
     margin: 0;
     box-sizing: border-box !important;
     font-family: 'Lato', sans-serif;
     font-style: normal;
+    outline: none !important;
 }
 
 body{
@@ -33,8 +33,8 @@ body{
     --footer-text-color: rgb(30, 196, 30);
     --card-outro-bg:  purple;
     --outro-button-bg: black;
-    --active-color: rgb(155, 209, 28);
-    --progess-bg: purple;
+    --active-color: rgb(255, 30, 169);
+    --progess-bg: rgba(202, 12, 202, 0.822);
 }
 
 /* for white mode */
@@ -108,7 +108,10 @@ body{
 a>ion-icon{
     position: relative;
     font-size: 1.5em;
-    margin-left: 5px;
+    margin-left: 8px;
+}
+.projects-button ion-icon{
+    margin-left: 10px;
 }
 a>h4{
     font-size: .95rem;
@@ -146,8 +149,9 @@ a>h4{
 }
 .menu-btn{
     margin-left: 7px;
-    margin-right: 38px;
+    /* padding-right: 38px; */
     display: flex;
+    justify-content: flex-end !important;
     cursor: pointer;
 }
 .menu-btn:hover{
@@ -170,10 +174,13 @@ a>h4{
     place-items: center;
     line-height: 3px;
 }
+header img{
+    border: 5px solid var(--banner-button);
+}
 header h2{
     font-size: 23px;
-    margin-top: -25px;
-    margin-left: 12px;
+    margin-top: -30px;
+    padding-left: 16px;
 }
 .sidebar ul li{
     text-decoration: none;
@@ -212,18 +219,16 @@ nav{
 }
 .logo{
     display: flex;
-    align-items: center;
-    align-content: center;
+    align-items: center !important;
     font-size: 18px;
     justify-content: flex-start;
+    margin-top: 5px;
 }
 .logo img{
     width: 55px;
     height: 55px;
     border-radius: 50%;
     margin-right: 16px;
-    margin-top: 5px;
-    margin-bottom: 6px;
     margin-left: 20px;
 }
 .navigation {
@@ -246,7 +251,8 @@ a{
     transition: .3s;
 }
 .hire-now:hover{
-    transform: translateY(-5px);
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+    margin-top: -3px;
 }
 .nav-links{
     text-decoration: none;
@@ -313,6 +319,7 @@ button{
 }
 button:hover{
     transform: translateY(-5px);
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
 }
 
 
@@ -337,7 +344,7 @@ button:hover{
 .web-info h1{
     text-align: center;
     font-weight: 600;
-    word-spacing: 3px;
+    word-spacing: 4px;
     font-size: 2.5rem;
     margin-bottom: 45px;
 }
@@ -351,7 +358,8 @@ button:hover{
     justify-content: center;
     padding: 1rem;
 }
-.col h2{
+.col h2{ 
+    letter-spacing: 1.2px;
     font-size: 24px;
     padding-bottom: 3px;
 }
@@ -445,12 +453,13 @@ button:hover{
     flex-direction: row;
     justify-content: center;
     padding-bottom: 80px;
+    margin-top: 50px;
 }
 .topic-outline{
     display: flex;
     flex-direction: column;
     flex: 4;
-    padding: 1.5em;
+    padding: 0 1.5em;
 }
 .topic-outline h1{
     font-size: 2.5rem;
@@ -458,10 +467,14 @@ button:hover{
 }
 .topic-outline p{
     font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
 }
 /* section two of comment card  */
 .comment-card{
-    column-count: 2;
+    columns: 2;
     column-gap: 1em;
     flex: 4;
 }
@@ -474,7 +487,30 @@ button:hover{
     margin: 0 0 1em;
     width: 100%;
 }
-
+.commentor{
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+.commentor img{  
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: -7px;
+}
+.statements p{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+.c-name{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-size: 18px !important;
+    text-align: left !important;
+    font-weight: 600;
+}
 /* tools i use section  */
 .tools-used>h1{
     text-align: center;
@@ -593,7 +629,7 @@ footer{
 }
 .footer-icon{
     font-size: 28px !important;
-    padding-right: 10px;
+    padding-right: 4px;
     cursor: pointer;
 }
 .icon-list{

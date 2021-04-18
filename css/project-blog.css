@@ -23,12 +23,15 @@
   }
   @media (min-width: 1200px) {
     .containers {
-      width: 1170px;
+      width: 1000px;
     }
 }
 
 
 /* page css */
+p{ 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
 .project{
     display: grid;
     grid-template-columns: 750px auto;
@@ -39,8 +42,7 @@
   border-radius: .5em;
   display: block;
   margin: 0 auto;
-  box-shadow: 1px -5px 15px 0px rgba(0,0,0,0.5);
-}
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)}
 .project-info{
   margin: 50px auto !important;
   width: 90%;
@@ -82,10 +84,10 @@
         width: 90%;
         display: block;
     }    
-    img{
-        display: block;
-        margin: 10px auto;
-        max-width: 90%;
+    .image-container img{
+      display: block;
+      margin: 10px auto;
+      max-width: 90%;
     }
 }
 

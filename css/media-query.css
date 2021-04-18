@@ -36,7 +36,7 @@
     .card{
         width: 100% !important;
         height: 100%;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
     .card-content{
         display: flex;
@@ -46,15 +46,9 @@
         margin-bottom: -40px;
         margin-left: -90px;
     }
-    .comment-card{
-        scroll-snap-type: mandatory;
-        /* width: 200%; */
-    }
-    .comment-card>div{
-        scroll-snap-align: start;
-    }
     .people-comments{
         flex-direction: column;
+        margin-top: 0px !important;
     }
     .topic-outline{
         padding: 2.5em;
@@ -215,7 +209,8 @@
 @media screen and (max-width: 1003px) and (min-width: 781px){ 
     nav{
         display: none;
-    }    /* contact page media for same screen  */
+    }
+    /* contact page media for same screen  */
     .page-topic>h1{
         font-size: 2.7rem;
         margin-bottom: 100px;
@@ -227,6 +222,10 @@
     }
     .flex-container{
         width: 70vw;
+    }
+    
+    .comment-card{
+        margin-top: 40px;
     }
 }
 

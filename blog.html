@@ -4,9 +4,191 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- CSS ONLY -->
+    <link href="css/index.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo-white-bg.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/media-query.css">
+    <link rel="stylesheet" href="css/project-blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Blog</title>
 </head>
 <body>
+        <!-- top navigation -->
+        <div class="top-nav">
+            <a href="http://"> 
+            Give my portfolio a retweet</span></a>
+            <ion-icon class="icon" name="logo-twitter"></ion-icon>
+        </div>
     
+        <!-- progress bar for scrolling -->
+        <div class="progress-container">
+              <div class="progress-bar" id="myBar"></div>
+        </div>
+    
+        <!-- navbar for laptop screen -->
+        <nav class="navbar container">
+            <div class="logo">
+               <img src="img/logo-white-bg.png" alt="logo">
+               <a href="index.html">Abiose Imran</a>
+            </div>
+    
+            <ul class="navigation">
+                <li><a class="nav-links" href="about.html">About</a></li>
+                <li><a class="nav-links" href="project.html">Projects</a></li>
+                <li><a class="nav-links" href="blog.html">Blog</a></li>
+                <li><a class="nav-links hire-now" href="contact.html">Hire me now</a></li>
+                <div class="nav-links" >
+                    <ion-icon class="color-switch" name="bulb"></ion-icon>
+                </div>
+            </ul>
+        </nav>
+    
+       <!-- navbar for mobile and tablet screens -->
+       <div class="contain">
+        <div class="flex-container  animate__animated animate__slideInLeft animate__delay-3s">
+            <a href="index.html" class="home-button">
+                <ion-icon name="home"></ion-icon>
+                <h4>Home</h4>
+            </a>
+    
+            <a href="about.html" class="about-button">
+                <ion-icon name="happy"></ion-icon>
+                <h4>About</h4>
+            </a>
+    
+            <a href="project.html" class="projects-button">
+                <ion-icon name="construct"></ion-icon>
+                <h4>Projects</h4>
+            </a>
+    
+            <a style="cursor: pointer !important;" onclick="toggleMenu()" class="menu-button">
+                <ion-icon name="grid"></ion-icon>
+                <h4>Menu</h4>
+            </a>
+        </div>
+       </div>
+    
+       <!-- sidebar navigation for mobile screens -->
+       <div class="sidebar">
+           <div class="close-menu">
+               <span class="menu-btn" onclick="untoggleMenu()">
+                <ion-icon name="close"></ion-icon>
+                <p>Exit Menu</p>
+               </span>
+               <div class="nav-links">
+                <ion-icon id="color-mobile" class="color-switch" name="bulb"></ion-icon>
+              </div>
+           </div>
+    
+           <header>
+               <img class="footer-image" src="img/logo-white-bg.png" alt="sidebar-img">
+               <h2>Abiose Imran</h2>
+           </header>
+    
+           <ul>
+               <li><a href="index.html"><ion-icon name="home-outline"></ion-icon>Home</a></li>
+               <li><a href="about.html"><ion-icon name="happy-outline"></ion-icon>About</a></li>
+               <li><a href="project.html"><ion-icon name="construct-outline"></ion-icon>Projects</a></li>
+               <li><a href="blog.html"><ion-icon name="book-outline"></ion-icon>Blog</a></li>
+               <li><a href="contact.html"><ion-icon name="paper-plane-outline"></ion-icon>Hire me now</a></li>
+           </ul>
+    
+           <div class="icon-list">
+            <a href="https://web.facebook.com/abioseimran">
+                <ion-icon class="footer-icon" name="logo-facebook"></ion-icon>
+            </a>
+    
+            <a href="https://twitter.com/abioseimran">
+                <ion-icon class="footer-icon" name="mail"></ion-icon>
+            </a>
+            <a href="https://twitter.com/abioseimran">
+                <ion-icon class="footer-icon" name="logo-github"></ion-icon>
+            </a>
+            <a href="https://twitter.com/abioseimran">
+                <ion-icon class="footer-icon" name="logo-twitter"></ion-icon>
+            </a>
+            
+            <a href="https://twitter.com/abioseimran">
+                <ion-icon class="footer-icon" name="logo-whatsapp"></ion-icon>
+            </a> 
+           </div>
+       </div>
+
+   <!-- page content  -->
+   <div class="page-content container">
+
+        <!-- blog 1  -->
+        <div class="project blog">
+            <div class="image-container">
+                <img src="img/travel-blog.png" alt=""> 
+            </div>
+
+            <div class="project-info">
+                <h1>My Journey into tech</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet a at velit laudantium dolorem corrupti molestiae, rerum dicta ipsam accusantium iure aperiam recusandae laboriosam quaerat provident eligendi repudiandae voluptatum sequi.</p>
+            </div>
+        </div>
+
+        
+       <!-- blog cards -->
+       <div class="blog-card">
+           <div class="blog-img">
+               <img src="" alt="">
+           </div>
+           <div class="blog-content">
+
+           </div>
+       </div>
+    </div>
+
+
+    <!-- footer! -->
+    <footer class="container">
+        <div class="footer-grid">    
+          <ul class="first-grid">
+              <img class="footer-image" src="img/logo-white-bg.png" alt="footer-image">
+              <h2>Abiose Imran</h2>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Vitae, est nemo perferendis unde cupiditate minima nisi iure odio <br> magni reprehenderi.</p>
+              <span>Currently available for hire</span>
+  
+              <div class="icon-list">
+                  <a href="https://web.facebook.com/abioseimran">
+                      <ion-icon class="footer-icon" name="logo-facebook"></ion-icon>
+                  </a>
+  
+                  <a href="https://twitter.com/abioseimran">
+                      <ion-icon class="footer-icon" name="mail"></ion-icon>
+                  </a>
+                  <a href="https://twitter.com/abioseimran">
+                      <ion-icon class="footer-icon" name="logo-github"></ion-icon>
+                  </a>
+                  <a href="https://twitter.com/abioseimran">
+                      <ion-icon class="footer-icon" name="logo-twitter"></ion-icon>
+                  </a>
+                  
+                  <a href="https://twitter.com/abioseimran">
+                      <ion-icon class="footer-icon" name="logo-whatsapp"></ion-icon>
+                  </a> 
+              </div>
+          </ul>
+  
+          <ul class="second-grid">
+              <h4>Easy Links</h4>
+              <a href="index.html">Home</a> 
+              <a href="about.html">About</a> 
+              <a href="project.html">Projects</a> 
+              <a href="">Blog</a>
+          </ul>
+        </div>   
+  
+        <div class="line-container">
+            <div class="line"></div>
+        </div>
+        <p class="copyright">© 2021 Abiose Imran</p>
+    </footer>
+  
+    <!-- javascripts helper tools! -->
+    <script src="js/index.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 </html>
