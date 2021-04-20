@@ -30,7 +30,7 @@
     <!-- navbar for laptop screen -->
     <nav class="navbar container">
         <div class="logo">
-           <img class="animate__animated animate__rotateIn" src="img/logo-white-bg.png" alt="logo">
+           <img src="img/logo-white-bg.png" alt="logo">
            <a href="index.html">Abiose Imran</a>
         </div>
 
@@ -48,9 +48,9 @@
    <!-- navbar for mobile and tablet screens -->
    <div class="contain">
     <div class="flex-container  animate__animated animate__slideInLeft animate__delay-2s">
-        <a href="index.html" class="home-button selected">
-            <ion-icon name="home"></ion-icon>
-            <h4>Home</h4>
+        <a href="index.html" class="home-button ">
+            <ion-icon  name="home"></ion-icon>
+            <h4 class="selected">Home</h4>
         </a>
 
         <a href="about.html" class="about-button">
@@ -122,7 +122,7 @@
         <h3><span>Design.</span>   Build.    Im<span>prove</span></h3>
       </div>
 
-      <div  class="intro">
+      <div class="intro">
         <h1>I create beautiful websites </h1>
         <h1>your users will love</h1>
       </div>
@@ -431,17 +431,17 @@
 
     <!-- javascripts helper tools! -->
     <script>
-window.onscroll = function() {scrollFunction2()};
-var bars = document.querySelector("#myBars")
+        window.onscroll = function() {scrollFunction2()};
+        var bars = document.querySelector("#myBars")
 
-function scrollFunction2() {
-    var scrollTops = document.body.scrollTop || document.documentElement.scrollTop;
-    var scrollValue1 = document.body.scrollHeight || document.documentElement.scrollHeight 
-    var scrollValue2 = document.documentElement.clientHeight && document.body.clientHeight
-    var scrollBottoms = scrollValue1 - scrollValue2
-    var scrolled = (scrollTops / scrollBottoms) * 100
-    bars.style.width = scrolled + "%";
-}
+        function scrollFunction2() {
+            var scrollTops = document.body.scrollTop || document.documentElement.scrollTop;
+            var scrollValue1 = document.body.scrollHeight || document.documentElement.scrollHeight 
+            var scrollValue2 = document.documentElement.clientHeight && document.body.clientHeight
+            var scrollBottoms = scrollValue1 - scrollValue2
+            var scrolled = (scrollTops / scrollBottoms) * 100
+            bars.style.width = scrolled + "%";
+        }
     </script>
     <script src="js/index.js" defer></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>

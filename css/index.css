@@ -105,9 +105,9 @@ body{
     border-radius: 1.25rem;
     max-height: 5em;
 }
-a>ion-icon{
+.flex-container a ion-icon{
     position: relative;
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin-left: 8px;
 }
 .projects-button ion-icon{
@@ -284,6 +284,15 @@ a{
     margin-top: 20px;
     text-align: center;
     margin-bottom: 35px;
+    /* animation-name: leFadeIn; */
+}
+.intro h1{
+    animation-name: leFadeIn;
+    animation-duration: 4s;
+}
+@keyframes leFadeIn {
+    from { opacity: 0 }
+    to { opacity: 1 }
 }
 div>h3{
     text-align: center !important;

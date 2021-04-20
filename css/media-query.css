@@ -30,13 +30,14 @@
     .card-outro>h1{
         font-size: 1.8rem;
     }
-    .card-container, outro-card{
+    .card-container{
         margin: 90px 0px !important;
+        padding: 2px;
     }
     .card{
         width: 100% !important;
         height: 100%;
-        /* overflow: hidden; */
+        overflow: hidden;
     }
     .card-content{
         display: flex;
