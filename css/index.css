@@ -60,6 +60,50 @@ body{
     --progess-bg: #4caf50;
 }
 
+/* page loader css  */
+.loader{
+    background: rgb(29, 23, 23);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
+    z-index: 99999999999999;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center;
+}
+.vanish{
+    animation: disappear 1s forwards
+}
+.loader-image{
+    margin-top: -40px !important;
+    border-radius: 50%;
+    animation: rotation 7s infinite alternate;
+}
+.glow-text{
+    font-size: 60px;
+    color: #fff;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+@keyframes rotation{
+    from{ transform: rotate(0deg); }
+    to{ transform: rotate(359deg);}
+}
+@keyframes disappear{
+    100%{ opacity: 0; visibility: hidden;}
+}
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
 /* top navigation for all pages */
 .top-nav{
     display: flex;
@@ -143,13 +187,14 @@ body{
     background: var(--card-bg-color);
 }
 .close-menu{
+    margin-top: 20px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .menu-btn{
     margin-left: 7px;
     display: flex;
-    justify-content: flex-end !important;
     cursor: pointer;
 }
 .menu-btn:hover{
@@ -160,15 +205,13 @@ body{
     margin-left: 2px;
 }
 #color-mobile{
-    position: absolute;
-    top: 3%;
-    right: 5%;
     margin-top: 2px;
+    margin-right: -25px;
     background-color: transparent !important;
 }
 .sidebar header{
-    margin-top: 30px;
-    margin-bottom: -20px;
+    margin-top: 20px;
+    margin-bottom: -14px;
     display: flex;
     padding: 12px;
     text-align: center;
@@ -177,6 +220,7 @@ body{
 }
 header img{
     border: 5px solid var(--banner-button);
+    margin-top: -2px;
 }
 header h2{
     font-size: 23px;
@@ -326,12 +370,12 @@ button{
 .hero-button button{
     background: var(--banner-button);  
     color: var(--dark-mode-text-color);
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
 }
 button:hover{
     transform: translateY(-5px);
-    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
 }
 
 

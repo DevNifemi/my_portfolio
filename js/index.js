@@ -1,3 +1,4 @@
+// dark and white mode toggle 
 const colorSwitch = document.querySelectorAll('.color-switch');
 let whiteMode = localStorage.getItem('whiteMode')
 
@@ -50,7 +51,6 @@ function untoggleMenu(){
 
 
 // page scrolling progress bar
-
 document.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -61,3 +61,10 @@ function scrollFunction() {
 }
 
 
+// loader function 
+const loader = document.querySelector('.loader')
+window.addEventListener('ready', setTimeout(disappear, 8000))
+
+function disappear(){
+    loader.classList.add('vanish');
+}
