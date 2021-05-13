@@ -15,7 +15,7 @@
         font-size: 2rem;
     }
     .glow-text{
-        font-size: 3.4em;
+        display: none;
     }
     .intro h1{
         font-size: 2.4em;
@@ -55,7 +55,7 @@
     }
     .passport img{
         margin-bottom: -15px;
-        margin-left: -60px;
+        margin-left: -75px;
     }
     .people-comments{
         flex-direction: column;
@@ -113,7 +113,9 @@
     .tags{
         display: none !important;
     }
-
+    .copyright{
+        margin-bottom: 100px;
+    }
     /* contact page media  query for same screen  */
     .page-topic>h1{
         font-size: 2.2em;
@@ -225,6 +227,9 @@
     }
     .tags{
         display: none !important;
+    }
+    .copyright{
+        margin-bottom: 100px;
     }
 
     /* contact page media for same screen  */

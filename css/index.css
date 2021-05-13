@@ -34,7 +34,7 @@ body{
     --card-outro-bg:  purple;
     --outro-button-bg: black;
     --active-color: rgb(255, 30, 169);
-    --progess-bg: rgba(202, 12, 202, 0.822);
+    --progess-bg: rgb(189, 67, 142);
 }
 
 /* for white mode */
@@ -42,8 +42,8 @@ body{
     --dark-mode-bg-color: #fff;
     --dark-mode-text-color: #031926; 
     --dark-mode-border-line: #1d976c;
-    --span-h3-dark-mode: #1d976c;
-    --banner-button: #1d976c;
+    --span-h3-dark-mode: #459b64da;
+    --banner-button: #26944eda;
     --card-bg-color: #F5EEED;
     --carousel-bg: #f2EEED;
     --comment-card-bg-color: #fff;
@@ -62,7 +62,7 @@ body{
 
 /* page loader css  */
 .loader{
-    background: rgb(29, 23, 23);
+    background: #000;
     position: fixed;
     top: 0;
     left: 0;
@@ -109,7 +109,7 @@ body{
     display: flex;
     justify-content: center;
     background-color: #000;
-    padding: .6em;
+    padding: .5em;
 }
 .top-nav :is(a){
     font-size: 1rem;

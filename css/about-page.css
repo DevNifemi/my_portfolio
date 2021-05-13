@@ -97,6 +97,7 @@ p{
 .story-text { 
     text-align: justify !important;
     font-size: 20px;
+    word-spacing: 0px !important;
     margin-bottom: 50px;
 } 
 
