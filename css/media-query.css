@@ -30,7 +30,11 @@
         margin-top: 90px;
     }
     .web-info h1{
+        width: 98%;
+        display: block;
+        margin: 0 auto;
         font-size: 2rem;
+        margin-bottom: 40px !important;
     }
     .card-outro{
         width: 100% !important;
@@ -101,6 +105,7 @@
         grid-row-gap: 10px;
         margin: 0px !important;
     }
+    
     .footer-grid{
         margin-bottom: 80px;
         display: grid;

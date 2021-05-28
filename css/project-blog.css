@@ -29,9 +29,6 @@
 
 
 /* page css */
-p{ 
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
-}
 .project{
     display: grid;
     grid-template-columns: 750px auto;

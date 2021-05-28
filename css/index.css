@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
 
 *{
     margin: 0;
@@ -7,6 +9,21 @@
     font-style: normal;
     outline: none !important;
 }
+.sidebar::-webkit-scrollbar {
+    width: 0em !important;
+}
+body::-webkit-scrollbar {
+    width: .7em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--banner-button);
+    border-radius: 10px;
+  }
 
 body{
     background-color: var(--dark-mode-bg-color);
@@ -42,8 +59,8 @@ body{
     --dark-mode-bg-color: #fff;
     --dark-mode-text-color: #031926; 
     --dark-mode-border-line: #1d976c;
-    --span-h3-dark-mode: #459b64da;
-    --banner-button: #26944eda;
+    --span-h3-dark-mode: #2b9752da;
+    --banner-button: #1d865c;
     --card-bg-color: #F5EEED;
     --carousel-bg: #f2EEED;
     --comment-card-bg-color: #fff;
@@ -116,7 +133,7 @@ body{
     font-weight: 600;
     color: white !important;
     margin-right: 6px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-family: 'Nunito Sans', sans-serif;
 }
 .top-nav :is(a):hover{
     text-decoration: underline;
@@ -185,7 +202,22 @@ body{
     height: 100%;
     z-index: 9999999 !important;
     background: var(--card-bg-color);
+    overflow-y: scroll;
 }
+.svg-nav {
+    margin-left: 4px;
+    width: 1.6em;
+    height: 1.4em;
+  } 
+  .svg-nav path,
+  .svg-nav polygon,
+  .svg-nav rect {
+    fill: var(--dark-mode-text-color);
+  }  
+ .svg-nav circle {
+    stroke: var(--dark-mode-text-color);
+    stroke-width: 1;
+  }
 .close-menu{
     margin-top: 20px;
     display: flex;
@@ -402,12 +434,12 @@ button:hover{
     font-weight: 600;
     word-spacing: 4px;
     font-size: 2.9rem;
-    margin-bottom: 45px;
+    margin-bottom: 80px;
 }
 .row{
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-row-gap: 30px;
+    grid-row-gap: 45px;
 }
 .col{
     display: flex;
@@ -417,6 +449,7 @@ button:hover{
 .col h2{ 
     font-size: 24px;
     padding-bottom: 3px;
+    font-family: 'Nunito Sans', sans-serif;
 }
 /* further services info  */
 .more-services{
@@ -522,11 +555,8 @@ button:hover{
 }
 .topic-outline p{
     font-size: 16px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
 }
-p{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
-}
+
 /* section two of comment card  */
 .comment-card{
     columns: 2;
@@ -546,7 +576,7 @@ p{
     margin-top: 14px;
     display: flex;
     align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-family: 'Poppins', sans-serif;
 }
 .commentor img{  
     width: 55px;
@@ -558,11 +588,10 @@ p{
 .statements p{
     font-size: 14px;
     font-weight: 400;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-family: 'Poppins', sans-serif;
 }
 .c-name{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
-    font-size: 18px !important;
+    font-family: 'Nunito Sans', sans-serif;    font-size: 18px !important;
     text-align: left !important;
     font-weight: 600;
 }
@@ -798,8 +827,8 @@ div>h2{
     background-color: var(--svg-container-bg);
     width: 4em;
     height: 4em;
-    border-radius: 1rem;
-    padding: .8em;
+    border-radius: 1.2rem;
+    padding: .9em;
     display: flex;
     align-items: center;
     justify-items: center;
