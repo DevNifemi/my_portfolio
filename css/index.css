@@ -126,6 +126,7 @@ body{
     display: flex;
     justify-content: center;
     background-color: #000;
+    height: 40px;
     padding: .5em;
 }
 .top-nav :is(a){
@@ -362,20 +363,12 @@ a{
 .intro{
     margin-top: 20px;
     text-align: center;
+    width: 65rem;
     margin-bottom: 35px;
-    /* animation-name: leFadeIn; */
 }
-.intro h1{
-    animation-name: leFadeIn;
-    animation-duration: 4s;
-}
-@keyframes leFadeIn {
-    from { opacity: 0 }
-    to { opacity: 1 }
-}
+
 div>h3{
     text-align: center !important;
-    word-spacing: 3px;
     font-size: 1.3em;
     font-weight: bold;
     color: var(--dark-mode-text-color);
@@ -385,7 +378,7 @@ div>h3{
     font-style: normal;
     font-weight: bold;
     text-align: center;
-    word-spacing: 3px;
+    line-height: 1em;
 }
 h3>span{
     color: var(--span-h3-dark-mode); 
@@ -463,15 +456,22 @@ button:hover{
     font-size: 20px;
     font-weight: normal;
     padding-bottom: 8px;
-    border-bottom: solid var(--banner-button) 3px;
-    color: var(--dark-mode-text-color) !important;
+    display: inline-block;
+    color: var(--dark-mode-text-color);
     text-decoration: none;
-    transition: all .3s ease-out;
 }
-.more-services a:hover{
-    color: rgb(168, 51, 168) !important;
-    border-bottom: solid white 3px;
-    text-decoration: none !important;  
+.more-services a::after {
+    margin-top: 7px;
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: var(--banner-button);
+    transition: width .3s;
+}
+
+.more-services a:hover::after {
+    width: 100%;
 }
 
 
@@ -570,7 +570,6 @@ button:hover{
     padding: 1.2em;
     display: inline-block;
     margin: 0 0 1em;
-    width: 100%;
 }
 .commentor{
     margin-top: 14px;
@@ -639,7 +638,6 @@ button:hover{
 .card-outro p{
     padding-bottom: 2em;
     font-size: 1em;
-    word-spacing: 4px;
 }
 
 /* footer ! */
@@ -651,43 +649,42 @@ footer{
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 .footer-grid{
     margin-bottom: 80px;
     display: grid;
-    grid-template-columns: 600px 200px;
+    grid-template-columns: 650px 200px;
 }
 /* footer contents */
 .first-grid h2{
     font-size: 24px;
     font-style: normal;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 .first-grid p{
     margin-top: 10px;
-    margin-bottom: 25px;
-    word-spacing: 2px;
+    margin-bottom: 30px;
 }
 .first-grid span{
     color: var(--footer-text-color);
-    font-size: 17px;
+    font-size: 15px;
 }
 .first-grid span:hover{
     text-decoration: underline !important;
     cursor: not-allowed;
 }
 .second-grid{
-    margin-top: 120px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
 }
 .second-grid h4{
     font-size: 19px;
-    margin-bottom: 18px;
+    margin-bottom: 23px;
 }
-.second-grid a{
-    margin-bottom: 29px;
+.second-grid>a{
+    margin-bottom: 25px;
     font-size: 16px;
     font-weight: normal !important;
     list-style-type: none;
@@ -712,7 +709,7 @@ footer{
     margin-bottom: 50px;
 }
 .footer-icon{
-    font-size: 28px !important;
+    font-size: 25px !important;
     padding-right: 4px;
     cursor: pointer;
 }

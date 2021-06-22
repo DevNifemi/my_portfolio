@@ -17,6 +17,10 @@
     .glow-text{
         display: none;
     }
+    .intro{
+        width: auto;
+        padding: 1em;
+    }
     .intro h1{
         font-size: 2.4em;
         padding: 3px;
@@ -62,9 +66,16 @@
         margin-left: -75px;
     }
     .people-comments{
-        flex-direction: column;
+        display: block;
         margin-top: 0px !important;
     }
+    .comment-card{
+        columns: 2;
+        column-gap: 2em;
+        overflow-x: scroll;
+        flex: 1;
+    }
+    /* section two of comment card  */
     .topic-outline{
         padding: 1em 1em !important;
         margin-bottom: 55px;
@@ -105,12 +116,11 @@
         grid-row-gap: 10px;
         margin: 0px !important;
     }
-    
     .footer-grid{
         margin-bottom: 80px;
         display: grid;
         grid-template-columns: auto;
-        margin-left: -20px !important;
+        margin-left: -25px !important;
     }
     .second-grid{
         margin-top: 30px;
@@ -121,6 +131,7 @@
     .copyright{
         margin-bottom: 100px;
     }
+
     /* contact page media  query for same screen  */
     .page-topic>h1{
         font-size: 2.2em;
@@ -144,6 +155,9 @@
 @media screen and (max-width: 780px) and (min-width: 502px) {
     nav{
         display: none;
+    }
+    .intro{
+         width: auto;
     }
     .intro h1{
         font-size: 2.35em;
@@ -253,6 +267,9 @@
 @media screen and (max-width: 1003px) and (min-width: 781px){ 
     nav{
         display: none;
+    }
+    .intro{
+        width: auto;
     }
     /* contact page media for same screen  */
     .page-topic>h1{
