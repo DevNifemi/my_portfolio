@@ -42,7 +42,7 @@ body{
     --carousel-bg: #303241;
     --comment-card-bg-color: #303241;
     --smaller-card-bg-color: rgb(29, 23, 23);
-    --flex-container-bg-color: #3b385c;
+    --flex-container-bg-color: #303241;
     --comment-sect-bg-color: rgb(29, 23, 23);
     --svg-container-bg: #1A1C23;
     --top-nav-color: purple;
@@ -444,6 +444,9 @@ button:hover{
     padding-bottom: 3px;
     font-family: 'Nunito Sans', sans-serif;
 }
+.col p{
+    font-family: 'Poppins', sans-serif;
+}
 /* further services info  */
 .more-services{
     display: flex;
@@ -517,7 +520,7 @@ button:hover{
     font-size: 18px;
 }
 .smaller-card button{
-    margin-top: 35px;
+    margin-top: 25px;
     border-radius: .75rem !important;
     font-weight: 600;
     font-size: 16px;
@@ -554,13 +557,14 @@ button:hover{
     margin-bottom: 15px;
 }
 .topic-outline p{
-    font-size: 16px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* section two of comment card  */
 .comment-card{
     columns: 2;
-    column-gap: 1em;
+    column-gap: .8em;
     flex: 4;
 }
 .comment-card>div{
@@ -570,12 +574,13 @@ button:hover{
     padding: 1.2em;
     display: inline-block;
     margin: 0 0 1em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
 }
 .commentor{
     margin-top: 14px;
     display: flex;
     align-items: center;
-    font-family: 'Poppins', sans-serif;
 }
 .commentor img{  
     width: 55px;
@@ -587,10 +592,10 @@ button:hover{
 .statements p{
     font-size: 14px;
     font-weight: 400;
-    font-family: 'Poppins', sans-serif;
 }
 .c-name{
-    font-family: 'Nunito Sans', sans-serif;    font-size: 18px !important;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px !important;
     text-align: left !important;
     font-weight: 600;
 }
@@ -614,6 +619,7 @@ button:hover{
 }
 .card-outro{
     width: 65rem;
+    height: fit-content;
     margin: 120px auto;
     overflow: hidden;
     padding-left: 1.6em;
@@ -638,6 +644,7 @@ button:hover{
 .card-outro p{
     padding-bottom: 2em;
     font-size: 1em;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* footer ! */
@@ -707,6 +714,7 @@ footer{
 .copyright{
     margin-left: 5%;
     margin-bottom: 50px;
+    font-family: 'Poppins', sans-serif;
 }
 .footer-icon{
     font-size: 25px !important;

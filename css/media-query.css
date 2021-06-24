@@ -34,15 +34,15 @@
         margin-top: 90px;
     }
     .web-info h1{
-        width: 98%;
+        width: 90%;
         display: block;
         margin: 0 auto;
-        font-size: 2rem;
+        font-size: 1.8rem;
         margin-bottom: 40px !important;
     }
     .card-outro{
         width: 100% !important;
-        height: 100%;
+        height: auto;
     }
     .card-outro h1{
         font-size: 1.8rem;
@@ -68,12 +68,14 @@
     .people-comments{
         display: block;
         margin-top: 0px !important;
+        /* overflow-x: scroll !important; */
     }
     .comment-card{
-        columns: 2;
-        column-gap: 2em;
+        padding-left: 1em;
         overflow-x: scroll;
-        flex: 1;
+    }
+    .comment-card>div{
+        /* width: 18em; */
     }
     /* section two of comment card  */
     .topic-outline{
@@ -82,7 +84,7 @@
     }
     .topic-outline h1{
         text-align: center;
-        font-size: 2em;
+        font-size: 1.8em;
         padding-bottom: 12px;
     }
     .topic-outline p{
@@ -170,7 +172,7 @@
     }
     .card-outro{
         width: auto !important;
-        height: 100%;
+        height: auto;
         margin: 20px;
     }
     .card-outro h1{
