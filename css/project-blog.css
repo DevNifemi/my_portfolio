@@ -65,7 +65,7 @@
 }
 .project-info a{
   color: #fa1143;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 100 !important;
   display: flex;
   align-items: center;
@@ -99,6 +99,9 @@
     transform: translateY(6px);
     background: var(--card-bg-color);
 }
+.title{
+  font-size: 3em;
+}
 
 
 
@@ -124,4 +127,19 @@
 
 @media screen and (max-width: 1000px) and (min-width: 701px){
 
+}
+
+
+@media screen and  (max-width: 600px){
+  .project-info h1{
+    font-size: 25px;
+    margin-top: -10px;
+  }
+  .project-info p{
+    margin-bottom: 13px;
+  }
+  .project-1{
+    display: grid;
+    grid-template-columns: auto !important;
+  }
 }

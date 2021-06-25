@@ -14,16 +14,16 @@
 }
 body::-webkit-scrollbar {
     width: .7em;
-  }
+}
    
-  body::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
     box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.3);
-  }
+}
    
-  body::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
     background-color: var(--banner-button);
     border-radius: 10px;
-  }
+}
 
 body{
     background-color: var(--dark-mode-bg-color);
@@ -34,7 +34,7 @@ body{
 /* for dark mode */
 :root{
     --dark-mode-bg-color: #23252F;
-    --dark-mode-text-color: #fff; 
+    --dark-mode-text-color: rgb(255, 255, 255); 
     --dark-mode-border-line: purple;
     --span-h3-dark-mode: rgb(202, 39, 202);
     --banner-button: purple;
@@ -125,12 +125,13 @@ body{
 .top-nav{
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #000;
     height: 40px;
     padding: .5em;
 }
 .top-nav :is(a){
-    font-size: 1rem;
+    font-size: 15px;
     font-weight: 600;
     color: white !important;
     margin-right: 6px;
@@ -151,9 +152,9 @@ body{
     display: flex;
 }
 .flex-container{
-    width: 94vw;
+    width: 93vw;
     display: flex;
-    bottom: 1.7%;
+    bottom: 3%;
     padding-top: .75rem;
     padding-bottom: .75rem;
     z-index: 999999;
@@ -165,10 +166,11 @@ body{
     justify-content: space-evenly;
     background-color: var(--flex-container-bg-color);
     border-radius: 1.25rem;
-    max-height: 5em;
+    height: fit-content;
+    max-height: 4.4em;
 }
 .flex-container a ion-icon{
-    position: relative;
+    /* position: relative; */
     font-size: 1.3em;
     margin-left: 5px;
 }
@@ -177,7 +179,7 @@ body{
 }
 .flex-container a h4{
     font-size: 12px;
-    margin-top: 5px;
+    margin-top: 8px;
     font-weight: 500;
     line-height: 1rem;
 }
@@ -363,12 +365,11 @@ a{
 .intro{
     margin-top: 20px;
     text-align: center;
-    width: 65rem;
+    width: 70rem;
     margin-bottom: 35px;
 }
 
 div>h3{
-    text-align: center !important;
     font-size: 1.3em;
     font-weight: bold;
     color: var(--dark-mode-text-color);
@@ -380,11 +381,6 @@ div>h3{
     text-align: center;
     line-height: 1em;
 }
-h3>span{
-    color: var(--span-h3-dark-mode); 
-    text-align: center;
-    
-}
 button{
     padding: .75rem 2.5rem;
     cursor: pointer;
@@ -395,8 +391,8 @@ button{
 .hero-button button{
     background: var(--banner-button);  
     color: var(--dark-mode-text-color);
-    font-weight: 600;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 15px;
 }
 button:hover{
     transform: translateY(-5px);
@@ -432,7 +428,7 @@ button:hover{
 .row{
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-row-gap: 45px;
+    grid-row-gap: 40px;
 }
 .col{
     display: flex;
@@ -440,7 +436,7 @@ button:hover{
     padding: 1rem;
 }
 .col h2{ 
-    font-size: 24px;
+    font-size: 23px;
     padding-bottom: 3px;
     font-family: 'Nunito Sans', sans-serif;
 }
@@ -449,19 +445,22 @@ button:hover{
 }
 /* further services info  */
 .more-services{
+    margin-top: 50px;
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
-    cursor: pointer;
 }
 .more-services a{
-    font-size: 20px;
+    font-size: 17px;
     font-weight: normal;
     padding-bottom: 8px;
-    display: inline-block;
     color: var(--dark-mode-text-color);
     text-decoration: none;
+}
+.more-services a ion-icon{
+    margin-left: 5px;
+    margin-top: 8px;
 }
 .more-services a::after {
     margin-top: 7px;
@@ -487,9 +486,9 @@ button:hover{
 .card{
     width: 65rem;
     border-radius: .9rem !important;
-    height: 363px;
+    height: 350px;
     margin: 0 auto !important;
-    padding: 28px;
+    padding: 20px;
     background-color: var(--card-bg-color);
 }
 .card-content{
@@ -499,7 +498,7 @@ button:hover{
 }
 .passport img{
     margin-top: -100px;
-    margin-left: -85px;
+    margin-left: -80px;
     margin-right: -85px;
 }
 /* section two of portfolio card */
@@ -517,13 +516,13 @@ button:hover{
 }
 .smaller-card p{
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 15px;
 }
 .smaller-card button{
     margin-top: 25px;
     border-radius: .75rem !important;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 15px;
     padding: .75rem 2.5rem;
     transition: all .3s ease-in-out;
     margin-bottom: 10px;

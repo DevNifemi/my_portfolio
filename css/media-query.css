@@ -17,13 +17,20 @@
     .glow-text{
         display: none;
     }
+    .top-nav :is(a){
+        font-size: 11px;
+    }
     .intro{
-        width: auto;
-        padding: 1em;
+        width: 100%;
+        padding-right: .5em;
+        padding-left: .5em;
     }
     .intro h1{
-        font-size: 2.4em;
-        padding: 3px;
+        font-size: 2.2em;
+        line-height: 2.5rem;
+        text-align: center;
+        margin-bottom: 12px;
+        margin-top: 10px;
     }
     .loader-image{
         position: relative;
@@ -31,12 +38,12 @@
         margin-bottom: 0;
     }
     .hero{
-        margin-top: 90px;
+        margin-top: 80px;
     }
     .web-info h1{
         width: 90%;
         display: block;
-        margin: 0 auto;
+        margin: -15px auto;
         font-size: 1.8rem;
         margin-bottom: 40px !important;
     }
@@ -54,7 +61,7 @@
     .card{
         width: 100% !important;
         height: 100%;
-        padding: 18px;
+        padding: 17px;
         overflow: hidden;
     }
     .card-content{
@@ -73,9 +80,6 @@
     .comment-card{
         padding-left: 1em;
         overflow-x: scroll;
-    }
-    .comment-card>div{
-        /* width: 18em; */
     }
     /* section two of comment card  */
     .topic-outline{
@@ -99,15 +103,16 @@
     }
     .smaller-card{
         margin-top: -100px;
-        padding: 20px;
+        padding: 10px;
     }
     .smaller-card h1{
-        font-size: 35px;
+        font-size: 30px;
         text-align: center;
     }
     .smaller-card p{
         text-align: center;
         margin-top: 15px;
+        padding: 2px;
     }
     .smaller-card button{
         display: block;
@@ -115,7 +120,7 @@
     }
     .row{
         grid-template-columns: auto;
-        grid-row-gap: 10px;
+        grid-row-gap: 40px;
         margin: 0px !important;
     }
     .footer-grid{
@@ -144,12 +149,6 @@
         margin-top: 70px;
         text-align: center;
     }
-    /* project page media query for same screen */
-    .project-1{
-        display: grid;
-        grid-template-columns: auto !important;
-    }
-
 }
 
 
@@ -217,16 +216,17 @@
     }
     .smaller-card{
         margin-top: -120px !important;
-        padding: 28px;
+        padding: 20px;
         z-index: 9999;
     }
     .smaller-card h1{
-        font-size: 35px;
+        font-size: 30px;
         text-align: center;
     }
     .smaller-card p{
         text-align: center;
         margin-top: 15px;
+        padding: 2px;
     }
     .smaller-card button{
         display: block;
