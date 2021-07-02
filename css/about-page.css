@@ -96,8 +96,7 @@ p{
 }
 .story-text { 
     text-align: justify !important;
-    font-size: 20px;
-    word-spacing: 0px !important;
+    font-size: 17px;
     margin-bottom: 50px;
 } 
 
@@ -117,7 +116,7 @@ p{
         margin: 0px ;
     }
     .story-text{
-        text-align: left;
+        text-align: center;
         margin-top: 20px;
     }
     .about-me-outline{

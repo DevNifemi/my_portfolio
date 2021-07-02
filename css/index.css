@@ -34,21 +34,21 @@ body{
 /* for dark mode */
 :root{
     --dark-mode-bg-color: #23252F;
-    --dark-mode-text-color: rgb(255, 255, 255); 
+    --dark-mode-text-color: #ffffff; 
     --dark-mode-border-line: purple;
     --span-h3-dark-mode: rgb(202, 39, 202);
-    --banner-button: purple;
+    --banner-button: #dd72dd;
     --card-bg-color: #303241;
     --carousel-bg: #303241;
     --comment-card-bg-color: #303241;
     --smaller-card-bg-color: rgb(29, 23, 23);
-    --flex-container-bg-color: #303241;
+    --flex-container-bg-color: #44485e;
     --comment-sect-bg-color: rgb(29, 23, 23);
     --svg-container-bg: #1A1C23;
     --top-nav-color: purple;
     --small-card-button-color: #fff;
     --footer-text-color: rgb(30, 196, 30);
-    --card-outro-bg:  purple;
+    --card-outro-bg:  linear-gradient(to right, #ce5fce, #8d1b97);
     --outro-button-bg: black;
     --active-color: rgb(255, 30, 169);
     --progess-bg: rgb(189, 67, 142);
@@ -58,9 +58,9 @@ body{
 .white-mode{
     --dark-mode-bg-color: #fff;
     --dark-mode-text-color: #031926; 
-    --dark-mode-border-line: #1d976c;
-    --span-h3-dark-mode: #2b9752da;
-    --banner-button: #1d865c;
+    --dark-mode-border-line: #80ffdb;
+    --span-h3-dark-mode: #80ffdb;
+    --banner-button: #80ffdb;
     --card-bg-color: #F5EEED;
     --carousel-bg: #f2EEED;
     --comment-card-bg-color: #fff;
@@ -73,7 +73,7 @@ body{
     --outro-button-bg: white;
     --active-color: #1c9269cb;
     --small-card-button-color: rgb(29, 23, 23);
-    --card-outro-bg:  linear-gradient(to right, #1d976c, #93f9b9);
+    --card-outro-bg:  linear-gradient(to right, #80ffdb, #86d6a4);
     --progess-bg: #4caf50;
 }
 
@@ -128,10 +128,10 @@ body{
     align-items: center;
     background-color: #000;
     height: 40px;
-    padding: .5em;
+    padding: .4em;
 }
 .top-nav :is(a){
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 600;
     color: white !important;
     margin-right: 6px;
@@ -167,10 +167,9 @@ body{
     background-color: var(--flex-container-bg-color);
     border-radius: 1.25rem;
     height: fit-content;
-    max-height: 4.4em;
+    max-height: 4.5em;
 }
 .flex-container a ion-icon{
-    /* position: relative; */
     font-size: 1.3em;
     margin-left: 5px;
 }
@@ -365,7 +364,7 @@ a{
 .intro{
     margin-top: 20px;
     text-align: center;
-    width: 70rem;
+    width: 50rem;
     margin-bottom: 35px;
 }
 
@@ -377,9 +376,10 @@ div>h3{
 .intro h1{
     font-size: 4rem;
     font-style: normal;
+    margin-bottom: 20px;
     font-weight: bold;
     text-align: center;
-    line-height: 1em;
+    line-height: 1.05em;
 }
 button{
     padding: .75rem 2.5rem;
@@ -391,7 +391,7 @@ button{
 .hero-button button{
     background: var(--banner-button);  
     color: var(--dark-mode-text-color);
-    font-weight: 500;
+    font-weight: 550;
     font-size: 15px;
 }
 button:hover{
@@ -410,7 +410,7 @@ button:hover{
 }
 .banner-image{
     max-width: 1000px;
-    border: 10px solid var(--span-h3-dark-mode);
+    border: 1px solid var(--span-h3-dark-mode);
 }
 
 
