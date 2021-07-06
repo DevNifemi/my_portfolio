@@ -8,7 +8,6 @@
 
 /* media query for phone and bigger phones */
 @media screen and (max-width: 501px){
-
     nav{
         display: none;
     }

@@ -106,9 +106,7 @@
     background: var(--card-bg-color);
 }
 /* part of blog section  */
-.title{
-  font-size: 3em;
-}
+
 .picture{
   width: 5em;
   height: 5em;
@@ -129,7 +127,7 @@
 header{
   text-align: center;
   margin-top: 50px;
-  font-size: 1.39em;
+  font-size: 3em;
   margin-bottom: 50px;
 }
 .name{
@@ -221,7 +219,11 @@ aside a ion-icon:hover{
     display: block;
   }
   header{
-    font-size: 1.1em;
+    font-size: 1.5em;
+    font-weight: bold;
+    width: 100%;
+    padding: 1em;
+    text-align: center;
   }
   .post{
     padding: 0;
