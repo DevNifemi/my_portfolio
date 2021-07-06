@@ -8,6 +8,7 @@
 
 /* media query for phone and bigger phones */
 @media screen and (max-width: 501px){
+
     nav{
         display: none;
     }
@@ -18,7 +19,7 @@
         display: none;
     }
     .top-nav :is(a){
-        font-size: 11px;
+        font-size: 12px;
     }
     div>h3{
         padding: 1em;
@@ -42,7 +43,7 @@
         margin-bottom: 0;
     }
     .hero{
-        margin-top: 80px;
+        margin-top: 65px;
     }
     .web-info h1{
         width: 90%;
@@ -77,8 +78,19 @@
         margin-left: -75px;
     }
     .people-comments{
-        display: block;
+        flex-direction: column;
         margin-top: 0px !important;
+    }
+    .comment-card{
+        padding: 2em;
+        width: 100%;
+        columns: 2;
+        column-gap: 2em;
+        overflow-x: scroll;
+        scroll-snap-type: x proximity;
+        }
+    .comment-card>div{
+        /* width: 13em; */
     }
     /* section two of comment card  */
     .topic-outline{
@@ -94,7 +106,11 @@
         text-align: center;
     }
     .banner-image{
-        display: none;
+        width: 90%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border: none;
     }
     .info-list{
         display: flex;
@@ -159,6 +175,9 @@
     .intro{
          width: auto;
     }
+    header{
+        font-size: 1.4em !important;
+    }
     .intro h1{
         font-size: 2.35em;
     }
@@ -207,7 +226,11 @@
         text-align: center;
     }
     .banner-image{
-        display: none;
+        width: 90%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border: none;
     }
     .info-list{
         display: flex;
@@ -284,9 +307,6 @@
     }
     .flex-container{
         width: 70vw;
-    }
-    .comment-card{
-        margin-top: 40px;
     }
 }
 

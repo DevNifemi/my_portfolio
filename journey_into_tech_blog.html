@@ -47,24 +47,24 @@
     <!-- navbar for mobile and tablet screens -->
     <div class="contain">
         <div class="flex-container  animate__animated animate__slideInLeft animate__delay-2s">
-            <a href="index.html" class="home-button ">
+            <a href="index.html" class="home-span ">
                 <ion-icon  name="home"></ion-icon>
                 <h4>Home</h4>
             </a>
     
-            <a href="about.html" class="about-button">
+            <a href="about.html" class="about-span">
                 <svg class="svg-nav" viewBox="0 0 20 20">
                     <path fill="none" d="M5.177,17.658c0,0,3.445,1.987,4.823,1.987c2.067,0,4.823-1.987,4.823-1.987c0.024-0.025,0.044-0.054,0.068-0.08H5.109C5.133,17.604,5.153,17.633,5.177,17.658z M8.622,1.583V0.531C6.496,0.973,2.539,2.521,1.376,7.933H0.699c-0.189,0-0.344,0.155-0.344,0.344v1.378C0.354,9.845,0.509,10,0.699,10h0.392c-0.016,0.224-0.026,0.454-0.033,0.689H0.699c-0.189,0-0.344,0.155-0.344,0.344v1.378c0,0.189,0.155,0.344,0.344,0.344h0.439c0.089,0.79,0.262,1.804,0.594,2.849v2.663H4.34c-2.233-2.449-2.264-6.822-2.264-7.01C2.077,4.052,6.353,2.108,8.622,1.583zM10.689,0.354H9.311v2.059h1.378V0.354z M11.378,2.63v0.472H8.622V2.63C6.612,3.147,3.11,4.951,3.11,11.258c0,0,0.004,3.373,1.47,5.632h4.042v-0.689h2.756v0.689h4.042c1.466-2.259,1.47-5.632,1.47-5.632C16.89,4.951,13.388,3.147,11.378,2.63z M5.005,12.035c-0.318-0.364-0.517-0.833-0.517-1.354S4.687,9.69,5.005,9.327V12.035zM6.383,10.026c-0.295,0.078-0.517,0.335-0.517,0.654c0,0.319,0.222,0.576,0.517,0.654v1.395c-0.384-0.032-0.738-0.163-1.033-0.377V9.008c0.296-0.214,0.649-0.345,1.033-0.377V10.026z M7.761,12.353c-0.296,0.214-0.649,0.345-1.033,0.377v-1.395C7.022,11.257,7.244,11,7.244,10.681c0-0.319-0.222-0.576-0.517-0.654V8.631c0.384,0.032,0.738,0.163,1.033,0.377V12.353zM8.105,12.035V9.327c0.318,0.363,0.517,0.833,0.517,1.354S8.423,11.671,8.105,12.035z M10,13.445l-1.378,0.689L10,12.756l1.378,1.378L10,13.445z M11.895,12.035c-0.318-0.364-0.517-0.833-0.517-1.354s0.199-0.991,0.517-1.354V12.035z M13.273,10.026c-0.295,0.078-0.517,0.335-0.517,0.654c0,0.319,0.222,0.576,0.517,0.654v1.395c-0.384-0.032-0.738-0.163-1.033-0.377V9.008c0.296-0.214,0.649-0.345,1.033-0.377V10.026z M14.651,12.353c-0.296,0.214-0.649,0.345-1.033,0.377v-1.395c0.295-0.078,0.517-0.335,0.517-0.654c0-0.319-0.222-0.576-0.517-0.654V8.631c0.384,0.032,0.738,0.163,1.033,0.377V12.353zM14.995,12.035V9.327c0.318,0.363,0.517,0.833,0.517,1.354S15.313,11.671,14.995,12.035z M19.646,9.656V8.278c0-0.189-0.155-0.344-0.344-0.344h-0.678c-1.163-5.413-5.12-6.96-7.246-7.402v1.052c2.269,0.525,6.545,2.469,6.545,9.675c0,0.188-0.031,4.561-2.264,7.01h2.608v-2.663c0.333-1.044,0.505-2.058,0.594-2.849h0.439c0.189,0,0.344-0.155,0.344-0.344v-1.378c0-0.189-0.155-0.344-0.344-0.344h-0.359c-0.007-0.235-0.017-0.465-0.033-0.689h0.392C19.491,10,19.646,9.845,19.646,9.656z"></path>
                 </svg>
                 <h4>About</h4>
             </a>
     
-            <a href="project.html" class="projects-button">
+            <a href="project.html" class="projects-span">
                 <ion-icon name="construct"></ion-icon>
                 <h4 class="selected">Projects</h4>
             </a>
     
-            <a style="cursor: pointer !important;" onclick="toggleMenu()" class="menu-button">
+            <a style="cursor: pointer !important;" onclick="toggleMenu()" class="menu-span">
                 <ion-icon name="grid"></ion-icon>
                 <h4>Menu</h4>
             </a>
@@ -116,19 +116,89 @@
             </a> 
            </div>
     </div>
-
+     
     <!-- blog content  -->  
-    <header>My Journey Into Technology/Programming</header>
-    <section>
-        <img src="img/travel-blog.png" alt="">
+    <header class="title">My Journey Into Technology/Programming</header>
 
+    <section class="containers">
+        <img class="blog-image" src="img/travel-blog.png" alt="">
+
+        <!-- blog informaton  -->
         <div class="blog-info">
 
+            <div class="info-content">
+                <img src="img/logo-white-bg.png" class="picture"/>
+                <div class="name">
+                    <h2>Abiose Imran</h2>
+                    <p class="name-p">January 20, 2020</p>
+                    <p>4 min read</p>
+                </div>
+            </div>
+
+            <div class="content">
+                <h3>How I started my long time dream and passion for coding/programming and how it has turned out for me in the long run, my challenges and my final progress all listed out.</h3>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- section two  -->
+    <section class="containers d-blog">
+        <!-- aside social nav bar  -->
+        <aside>
+            <a href="https://web.facebook.com/abioseimran">
+                <ion-icon style="color: #115bfc;" name="logo-facebook"></ion-icon>
+            </a>
+
+            <a href="">
+                <ion-icon style="color: #e61736;"  name="mail"></ion-icon>
+            </a>
+
+            <a href="https://twitter.com/abioseimran">
+                <ion-icon style="
+                color: rgba(15, 199, 231, 2) !important;" name="logo-twitter"></ion-icon>
+            </a>
+                
+            <a href="https://twitter.com/abioseimran">
+                <ion-icon style="color:#14bd46;" name="logo-whatsapp"></ion-icon>
+            </a> 
+        </aside>
+
+        <!-- actual blog information  -->
+        <div class="post">
+            <h2 class="blog-sub-topic"> Hello everyone,</h2>
+            My name is Abiose Imran, A programmer and web designer, My coding experience started since I was 12 years of age. I have always been a curious type and my everyday question is how come we have mobile apps and also every time I checked Google I always get the answers to my puzzles(even if some answers aren’t satisfactory).
+
+            <p>Later on, my curiosity pushed me to go to the cafe one faithful day with my jotting note, I bought 30 mins of time and all I did was checking dumb but later helpful questions, questions like “how does google work”, “how do we have websites”, “how to create websites”. Fortunately, I saw an article about programming languages as a student of junior secondary school. I bet some of us can testify that the main topic about computers back then was Input and Output. So I was stoked, seeing some lists of programming languages like python, java, ruby, and others.</p>
+
+            <p>I went back to google and check on what programming was, the answer was quite satisfactory(Languages used to solve immediate problems). The cafe attendant seeing how serious and disturbed an innocent boy was decided to come over and lend a helping, I was glad to bombard him with question.He carefully explained what programming languages are and how they can be used to create mobile apps and websites.</p>
+
+            <p> I was flabbergasted and happy at the same time, I thanked him and checked one last thing on google which was what is the simplest programming language to learn. I never knew if it was the correct answer but what I saw was PYTHON!</p>
+
+            <p>Noting that, I left the cafe, when I got home I told my dad’s laptop gaming days are over. I used my mom’s for assignment back then so I used it in checking “how to learn python”. I saw a pdf book(Headfirst programming).</p>
+
+            <p>The book helped to get familiar with the basics of python and the installation of a good text editor. Coming back from school all I do is either read or try writing code</p>
+
+            <p>Subsequently, due to academics drop down I stopped writing/learning code. Subsequently, after secondary school, I moved back into it fully learning-HTML, CSS and Javascript.</p>
+
+            <p>My passion for coding made me left Lagos(my city) and went for a boot camp at Ilorin my former knowledge on some languages made me a bit superior at the camp. Curiosity also pushed me further, I get to know a very great and conducive learning center called Malhub at Ilorin where I learned more and somewhat work as an intern!
+            </p>
+            <img class="post-images" src="img/passion-img.jpeg" alt="blog images">
+
+            <!-- tags for the post  -->
+            <div class="blog-tag">
+                <span>Tags: </span>
+                <span class="final-tags">Technology</span>
+                <span class="final-tags">Inspirations</span>
+                <span class="final-tags">Educative</span>
+                <span class="final-tags">Career</span>
+            </div>
         </div>
     </section>
 
+    
     <!-- footer! -->
-    <footer>
+    <footer class="container">
             <div class="footer-grid">    
               <ul class="first-grid">
                   <img class="footer-image" src="img/logo-white-bg.png" alt="footer-image">
