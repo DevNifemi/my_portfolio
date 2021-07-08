@@ -160,7 +160,7 @@ aside{
   flex-direction: column;
 }
 aside a ion-icon{
-  font-size: 2.8em;
+  font-size: 3em;
   margin-bottom: 10px;
 }
 aside a ion-icon:hover{
@@ -213,21 +213,25 @@ aside a ion-icon:hover{
     flex-direction: column-reverse;
     padding: 0 !important;
   }
+  .content h3{
+    margin-left: -5px !important;
+  }
   aside{
-    width: 90%;
+    width: 100%;
+    padding-left: 1em;
     margin: 30px auto;
     display: block;
   }
   header{
-    font-size: 1.5em;
+    font-size: 2.4em;
     font-weight: bold;
     width: 100%;
     padding: 1em;
     text-align: center;
   }
   .post{
-    padding: 0;
-    width: 90%;
+    padding: 1em;
+    width: 100%;
     display: block;
     margin: 0 auto;
   }
@@ -269,7 +273,22 @@ aside a ion-icon:hover{
   }
 }
 
-@media screen and (max-width: 1000px) and (min-width: 701px){
+@media screen and (max-width: 1000px) and (min-width: 601px){
+  .blog-info{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0 !important;
+  }
+  .info-content{
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  .content{
+    padding: 1em;
+  }
+  header{
+    font-size: 2.125rem;
+  }
 }
 
 
