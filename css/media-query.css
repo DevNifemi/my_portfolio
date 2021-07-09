@@ -84,6 +84,7 @@
         margin-top: 0px !important;
     }
     .comment-card{
+        margin-top: 50px;
         width: 100%;
         overflow-x: scroll !important;
         scroll-snap-type: x proximity;
@@ -93,7 +94,7 @@
         grid-template-columns: auto auto;
     }
     .comment-card>div{
-        width: 15em;
+        width: 16em;
         font-family: 'Lato';
         font-size: 15px;
         word-spacing: 1.5px;
@@ -106,15 +107,14 @@
         height: 18em !important;
     }
     .fourth-card{
-        margin-top: -98px !important;
+        margin-top: -78px !important;
     }
     .commentor{
         margin-top: 5px;
         display: flex;
         align-items: center !important;
-        justify-content: center;
     }
-    .commentor img{  
+    .profile-image img{  
         width: 3.8em;
         height: 3.8em;
         border-radius: 50%;
@@ -122,20 +122,17 @@
         margin-left: -6px;
     }
     .statements{
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        flex-direction: column;
+        display: block;
         margin-left: -2px;
     }
     .statements p{
         text-align: left;
         font-size: 14px;
         font-weight: 400;
-        margin-top: 2px;
+        margin-top: 5px;
     }
     .c-name{
-        text-align: left;
+        text-align: left !important;
         flex: 1;
         font-size: 17px !important;
         text-align: left !important;
@@ -166,8 +163,8 @@
         flex-direction: column;
     }
     .smaller-card{
-        margin-top: -100px;
-        padding: 10px;
+        margin-top: -135px;
+        padding: 1.5em 1em;
     }
     .smaller-card h1{
         font-size: 30px;

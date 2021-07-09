@@ -35,20 +35,19 @@ body{
 :root{
     --dark-mode-bg-color: #23252F;
     --dark-mode-text-color: #ffffff; 
-    --dark-mode-border-line: purple;
+    --dark-mode-border-line: #6d59a8;
     --span-h3-dark-mode: rgb(202, 39, 202);
-    --banner-button: #dd72dd;
+    --banner-button: #6D59A8;
     --card-bg-color: #303241;
     --carousel-bg: #303241;
-    --comment-card-bg-color: #303241;
+    --comment-card-bg-color: #23252F;
     --smaller-card-bg-color: rgb(29, 23, 23);
     --flex-container-bg-color: #44485e;
-    --comment-sect-bg-color: rgb(29, 23, 23);
+    --comment-sect-bg-color: #1A1C23;
     --svg-container-bg: #1A1C23;
-    --top-nav-color: purple;
     --small-card-button-color: #fff;
     --footer-text-color: rgb(30, 196, 30);
-    --card-outro-bg:  linear-gradient(to right, #ce5fce, #8d1b97);
+    --card-outro-bg:  #6D59A8;
     --outro-button-bg: black;
     --active-color: rgb(255, 30, 169);
     --progess-bg: rgb(189, 67, 142);
@@ -58,9 +57,9 @@ body{
 .white-mode{
     --dark-mode-bg-color: #fff;
     --dark-mode-text-color: #031926; 
-    --dark-mode-border-line: #80ffdb;
-    --span-h3-dark-mode: #80ffdb;
-    --banner-button: #80ffdb;
+    --dark-mode-border-line: #079c72;
+    --span-h3-dark-mode: #098a65;
+    --banner-button: #6CE5B1;
     --card-bg-color: #F5EEED;
     --carousel-bg: #f2EEED;
     --comment-card-bg-color: #fff;
@@ -68,7 +67,6 @@ body{
     --comment-sect-bg-color: #F5EEED;
     --flex-container-bg-color: #F3EEEA;
     --svg-container-bg: #f2EEEC;
-    --top-nav-color: #93f9b9;
     --footer-text-color: rgba(233, 14, 14, 0.87);
     --outro-button-bg: white;
     --active-color: #1c9269cb;
@@ -457,8 +455,9 @@ button:hover{
     align-items: center;
 }
 .more-services a{
-    font-size: 17px;
+    font-size: 15px;
     font-weight: normal;
+    font-family: 'Poppins', sans-serif;
     padding-bottom: 8px;
     color: var(--dark-mode-text-color);
     text-decoration: none;
@@ -563,6 +562,7 @@ button:hover{
 .topic-outline p{
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
+    margin-top: 5px;
 }
 
 /* section two of comment card  */
@@ -578,7 +578,7 @@ button:hover{
     padding: 1.2em;
     display: inline-block;
     margin: 0 0 1em;
-    font-family: 'Poppins', sans-serif;
+    word-spacing: 2px;
     font-size: 15px;
 }
 .commentor{
