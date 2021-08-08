@@ -1,10 +1,4 @@
-:root{
-    --card-outro-bg: purple;
-}
-.white-mode{
-    --card-outro-bg: #1d976c;
-}
-
+@import url(index.css);
 /* container class */
 .containers {
     padding-right: 15px;

@@ -328,11 +328,49 @@ a{
     background: var(--card-bg-color);
     border-radius: .7rem;
     transition: .3s;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border: none;
 }
-.hire-now:hover{
-    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
-    margin-top: -3px;
+.hire-now:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
 }
+.hire-now:hover:before {
+    opacity: 1;
+}
+.hire-now:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--card-bg-color);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
 .nav-links{
     text-decoration: none;
     display: block;
@@ -399,6 +437,12 @@ button{
 button:hover{
     transform: translateY(-5px);
     box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+}
+.hero-button button:hover{
+    transform: translateY(-5px);
+    background-color: transparent;
+    border-color: var(--banner-button);
+    box-shadow: 0 0 10px 0 var(--banner-button) inset, 0 0 10px 4px var(--banner-button);
 }
 
 
@@ -533,6 +577,12 @@ button:hover{
     background: var(--small-card-button-color); 
     color: var(--dark-mode-bg-color);
 }
+.smaller-card button:hover{
+    transform: translateY(-5px);
+    background-color: transparent;
+    color: var(--dark-mode-text-color);
+    box-shadow: 0 0 10px 0 var(--small-card-button-color) inset, 0 0 10px 4px var(--small-card-button-color);
+}
 
 
 /* people's comment section */
@@ -633,14 +683,59 @@ button:hover{
     border-radius: .9rem;
     background: var(--card-outro-bg); 
 }
-.card-outro>button{
+.card-outro button{
     background-color: var(--outro-button-bg);
     color: var(--dark-mode-text-color);
     font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border: none;
     font-size: 16px;
     transition: all .3s ease-in-out;
     padding: .75rem 2.5rem;
 }
+.card-outro button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+.card-outro button:active {
+    color: var(--dark-mode-text-color)
+}
+.card-outro button:active:after {
+    background: transparent;
+}
+.card-outro button:hover:before {
+    opacity: 1;
+}
+.card-outro button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--outro-button-bg);    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
 .card-outro h1{
     font-size: 2.5rem;
     padding-bottom: .4em;
@@ -865,7 +960,7 @@ footer{
 /* media queries for helpers classes */
 @media (min-width: 1400px) {
     .container {
-        width: 1300px;
+        width: 1350px;
         margin-right: auto;
         margin-left: auto;
     }
