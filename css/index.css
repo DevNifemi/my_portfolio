@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 
 *{
     margin: 0;
@@ -129,11 +129,11 @@ body{
     padding: .4em;
 }
 .top-nav :is(a){
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 600;
     color: white !important;
     margin-right: 6px;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Jost', sans-serif;
 }
 .top-nav :is(a):hover{
     text-decoration: underline;
@@ -175,10 +175,11 @@ body{
     margin-left: 10px;
 }
 .flex-container a h4{
-    font-size: 12px;
+    font-size: 13px;
     margin-top: 8px;
     font-weight: 500;
     line-height: 1rem;
+    font-family: 'Jost', sans-serif;
 }
 .flex-container a{
     display: block;
@@ -323,6 +324,7 @@ a{
     text-decoration: none;
     font-weight: bold;
     color: var(--dark-mode-text-color);
+    font-family: 'Jost', sans-serif;
 }
 .hire-now{
     background: var(--card-bg-color);
@@ -345,12 +347,7 @@ a{
     width: calc(100% + 4px);
     height: calc(100% + 4px);
     animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
     border-radius: 10px;
-}
-.hire-now:hover:before {
-    opacity: 1;
 }
 .hire-now:after {
     z-index: -1;
@@ -380,7 +377,7 @@ a{
     padding-right: 1.5rem;   
     margin-right: .5em;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 600;
     color: var(--dark-mode-text-color);;
 }
@@ -483,9 +480,9 @@ button:hover{
     padding: 1rem;
 }
 .col h2{ 
-    font-size: 23px;
+    font-size: 25px;
     padding-bottom: 3px;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Jost', sans-serif;
 }
 .col p{
     font-family: 'Poppins', sans-serif;
@@ -527,7 +524,7 @@ button:hover{
 
 /* portfolio home page card */
 .card-container{
-    margin: 85px 50px !important;
+    margin: 100px 50px !important;
     display: flex;
     justify-content: center;
 }
@@ -535,7 +532,7 @@ button:hover{
     width: 65rem;
     border-radius: .9rem !important;
     height: 350px;
-    margin: 0 auto !important;
+    margin: 5px auto !important;
     padding: 20px;
     background-color: var(--card-bg-color);
 }
@@ -561,6 +558,7 @@ button:hover{
 }
 .smaller-card h1{
     font-size: 2.7em;
+    font-family: 'Jost', sans-serif;
 }
 .smaller-card p{
     margin-top: 20px;
@@ -587,7 +585,7 @@ button:hover{
 
 /* people's comment section */
 .comments-card{
-    margin-top: 90px;
+    margin-top: 120px;
     background-color: var(--comment-sect-bg-color);
     padding-top: 3em;
 }
@@ -610,10 +608,11 @@ button:hover{
     margin-bottom: 15px;
 }
 .topic-outline p{
-    font-size: 15px;
-    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-family: 'Jost', sans-serif;
     margin-top: 5px;
 }
+
 
 /* section two of comment card  */
 .comment-card{
@@ -628,8 +627,9 @@ button:hover{
     padding: 1.2em;
     display: inline-block;
     margin: 0 0 1em;
-    word-spacing: 2px;
-    font-size: 15px;
+    /* word-spacing: 2px; */
+    font-size: 16px;
+    font-family: 'Jost', sans-serif;
 }
 .commentor{
     margin-top: 14px;
@@ -637,15 +637,18 @@ button:hover{
     align-items: center;
 }
 .commentor img{  
-    width: 55px;
-    height: 55px;
+    width: 3.7em;
+    height: 3.7em;
+    object-position: center;
+    object-fit: cover;
     border-radius: 50%;
     margin-right: 10px;
     margin-left: -7px;
 }
 .statements p{
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
+    font-family: 'Jost', sans-serif;
 }
 .c-name{
     font-family: 'Lato', sans-serif;
@@ -653,23 +656,26 @@ button:hover{
     text-align: left !important;
     font-weight: 600;
 }
+
+
 /* tools i use section  */
 .tools-used h1{
     text-align: center;
     font-size: 2.9rem;
     font-style: normal;
-    margin-top: 70px;
+    margin-top: 100px;
     padding-bottom: 20px;
+    /* font-family: 'Jost'; */
 }
 .tools-list{
-    margin-bottom: 90px !important;
+    margin-bottom: 100px !important;
 }
 
 /* last card of home page  */
 .outro-card{
     display: block;
     margin-bottom: 150px !important;
-    margin-top: 60px;
+    margin-top: 100px;
 }
 .card-outro{
     width: 65rem;
@@ -730,11 +736,6 @@ button:hover{
     top: 0;
     border-radius: 10px;
 }
-@keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
-}
 
 .card-outro h1{
     font-size: 2.5rem;
@@ -762,7 +763,7 @@ footer{
 .footer-grid{
     margin-bottom: 80px;
     display: grid;
-    grid-template-columns: 650px 200px;
+    grid-template-columns: 649px 200px;
 }
 /* footer contents */
 .first-grid h2{
@@ -771,8 +772,10 @@ footer{
     margin-bottom: 25px;
 }
 .first-grid p{
-    margin-top: 10px;
+    margin-top: 8px;
     margin-bottom: 30px;
+    font-family: 'Jost', sans-serif;
+    font-size: 16.4px;
 }
 .first-grid span{
     color: var(--footer-text-color);

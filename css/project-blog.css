@@ -148,8 +148,9 @@ header{
   display: flex;
 }
 .content h3{
-  font-size: 16px;
+  font-size: 17px;
   font-weight: bold;
+  font-family: 'Jost', sans-serif;
   margin-left: -5px;
 }
 .d-blog{

@@ -58,6 +58,10 @@ div>h4{
     letter-spacing: 1px;
     margin-bottom: 10px;
 }
+div p{
+    font-family: 'Jost';
+    font-size: 16px;
+}
 .tags{
     margin-top: 30px !important;
     padding: .25em;
@@ -67,13 +71,13 @@ div>h4{
     width: 13em;
     border-radius: 1em;
 }
-p{ 
+.journey-outline p{ 
     font-family: 'Poppins', sans-serif !important;
 }
 .journey-outline{
     overflow: hidden;
 }
-.journey-outline>h1{
+.journey-outline h1{
     text-align: center;
     margin-bottom: 40px;
 }

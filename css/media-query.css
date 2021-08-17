@@ -93,21 +93,25 @@
         padding-right: 1em;
         grid-template-columns: auto auto;
     }
+    .comment-card::-webkit-scrollbar {
+        width: 0em !important;
+        display: none !important;
+    }
     .comment-card>div{
         width: 16em;
-        font-family: 'Lato';
-        font-size: 15px;
-        word-spacing: 1.5px;
+        font-size: 16px;
     }
     .third-card{
         height: 15em !important;
         margin-top: -5px !important;
     }
     .second-card{
-        height: 18em !important;
+        height: 14em !important;
+        margin-top: 40px !important;
     }
     .fourth-card{
-        margin-top: -78px !important;
+        margin-top: -123px !important;
+        height: 18em;
     }
     .commentor{
         margin-top: 5px;
@@ -120,16 +124,20 @@
         border-radius: 50%;
         margin-right: 7px;
         margin-left: -6px;
+        margin-top: 10px;
     }
     .statements{
         display: block;
         margin-left: -2px;
+        margin-top: -5px;
     }
     .statements p{
         text-align: left;
         font-size: 14px;
         font-weight: 400;
-        margin-top: 5px;
+        margin-left: 9px;
+        margin-top: 7px;
+        line-height: 1em;
     }
     .c-name{
         text-align: left !important;

@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="img/logo-white-bg.png" type="image/x-icon">
     <!-- CSS only -->
     <link href="css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/media-query.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -161,7 +162,9 @@
 
     <!-- card content -->
     <div class="container">
-        <div class="row">
+        <div 
+        data-aos="fade-up" 
+        class="row">
 
             <div class="col">
                 <div class="svg-container">
@@ -251,13 +254,13 @@
 
     <!-- introduction card -->
     <div class="card-container">
-        <div class="card">
+        <div class="card" data-aos="fade-down">
             <div class="card-content">
-                <div class="passport">
+                <div data-aos="fade-right" class="passport">
                     <img src="img/logo-transparent.png">
                 </div>
 
-                <div class="smaller-card">
+                <div class="smaller-card" data-aos="fade-up">
                     <h1>I'm Nifemi</h1>
                     <p>I’m a design minded front-end developer. I am open to learning new things and working with any set of teams.👻🤥</p>
                     <button onclick="window.location.href='contact.html' ">Let's have a talk</button>
@@ -268,7 +271,7 @@
     </div>
 
     <!-- comments section card -->
-    <section class="comments-card">
+    <section class="comments-card" data-aos="fade-up">
         <div class="people-comments container">
 
             <div class="topic-outline">
@@ -344,7 +347,7 @@
     </section>
 
     <!-- tools used section -->
-    <section>   
+    <section data-aos='fade-right'>   
         <div class="tools-used">
             <h1>The Tools I Use</h1>
         </div>
@@ -387,7 +390,7 @@
     </section>
 
     <!-- last home page card  -->
-    <section class="outro-card">
+    <section class="outro-card" data-aos="fade-down">
         <div class="card-outro">
             <h1>Where should we start</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt deleniti impedit dolorum dolore, dolores exercitationem voluptatibus eveniet laborum possimus placeat rerum praesentium illo omnis itaque, beatae veritatis explicabo expedita officiis!</p>
@@ -455,6 +458,13 @@
             var scrolled = (scrollTops / scrollBottoms) * 100
             bars.style.width = scrolled + "%";
         }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 400,
+            duration: 1000
+        });
     </script>
     <script src="js/index.js" defer></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
