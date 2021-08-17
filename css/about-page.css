@@ -1,4 +1,6 @@
 @import url(index.css);
+@import url(media-query.css);
+
 /* container class */
 .containers {
     padding-right: 15px;
