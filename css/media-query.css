@@ -146,6 +146,14 @@
         text-align: left !important;
         font-weight: 600;
     }
+    form{
+        width: 96%;
+        padding: 0 17px;
+        margin-top: -5px;
+    }
+    .second-grid{
+        margin-left: 0px;
+    }
     /* section two of comment card  */
     .topic-outline{
         padding: 1em 1em !important;
@@ -223,6 +231,14 @@
 
 /* media query for tablets only! */
 @media screen and (max-width: 780px) and (min-width: 502px) {
+    form{
+        width: 90%;
+        padding: 0 17px;
+        margin-top: 5px;
+    }
+    .second-grid{
+        margin-left: 0px;
+    }
     nav{
         display: none;
     }
@@ -343,6 +359,9 @@
 
 
 @media screen and (max-width: 1003px) and (min-width: 781px){ 
+    .footer-grid{
+        grid-template-columns: auto auto;
+    }
     nav{
         display: none;
     }
@@ -366,6 +385,9 @@
 
 /* media query for extra small phones */
 @media screen and (max-width: 1111px) and (min-width: 781px){ 
+    .footer-grid{
+        grid-template-columns: auto auto;
+    }
     .card-outro{
         width: auto !important;
         height: 100%;

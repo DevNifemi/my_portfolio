@@ -10,17 +10,19 @@
     <link rel="stylesheet" href="css/media-query.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
     <!-- page title -->
     <title>Abiose Imran | Frontend Developer</title>
 </head>
 <body>
 
     <!-- pre page loader  -->
-    <div class="loader">
+    <!-- <div class="loader">
         <div>
         <img src="img/logo-transparent.png" alt="loading..." class="loader-image"></div>
         <h1 class="glow-text">Loading...</h1>
-    </div>
+    </div> -->
 
     <!-- top navigation -->
     <div class="top-nav">
@@ -36,6 +38,7 @@
 
     <!-- navbar for laptop screen -->
     <nav class="navbar container">
+        
         <div class="logo">
            <img src="img/logo-white-bg.png" alt="logo">
            <a href="index.html">Abiose Imran</a>
@@ -125,7 +128,7 @@
         </div>
     </div>
 
-        <!-- hero introduction -->
+     <!-- hero introduction -->
     <div class="hero">   
         <div>
             <h3 class="slogan"> <span>Design</span>. Build. <span>Improve</span></h3>
@@ -437,6 +440,14 @@
               <a href="contact.html">Contact</a> 
               <a href="blog.html">Blog</a>
           </ul>
+
+          <form action="https://formsubmit.co/abioseimran@gmail.com" method="POST">
+              <h4>Leave A Message</h4>
+              <input name='email' type="email" required placeholder="Enter Your email"/>
+              <textarea name='text' required placeholder="Drop a message" name="" id="" cols="30" rows="7"></textarea>
+              <input type="hidden" name="_captcha" value="false">
+              <button class='form-btn' type="submit">Send</button>
+          </form>
         </div>   
   
         <div class="line-container">
@@ -467,7 +478,6 @@
         });
     </script>
     <script src="js/index.js" defer></script>
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 </body>
