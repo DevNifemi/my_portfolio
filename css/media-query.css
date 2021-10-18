@@ -148,11 +148,11 @@
     }
     form{
         width: 96%;
-        padding: 0 17px;
-        margin-top: -5px;
+        padding-left: 14px;
+        margin-top: 45px;
     }
     .second-grid{
-        margin-left: 0px;
+        margin: 0px;
     }
     /* section two of comment card  */
     .topic-outline{
@@ -234,10 +234,10 @@
     form{
         width: 90%;
         padding: 0 17px;
-        margin-top: 5px;
+        margin-top: 20px;
     }
     .second-grid{
-        margin-left: 0px;
+        margin: 0px;
     }
     nav{
         display: none;
