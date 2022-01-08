@@ -763,7 +763,8 @@ footer{
 .footer-grid{
     margin-bottom: 80px;
     display: grid;
-/* padding: 10px; */
+
+    width: 100% !important;
     grid-template-columns: 600px 150px auto;
 }
 /* footer contents */
