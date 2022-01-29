@@ -18,11 +18,11 @@
 <body>
 
     <!-- pre page loader  -->
-    <!-- <div class="loader">
+    <div class="loader">
         <div>
         <img src="img/logo-transparent.png" alt="loading..." class="loader-image"></div>
         <h1 class="glow-text">Loading...</h1>
-    </div> -->
+    </div>
 
     <!-- top navigation -->
     <div class="top-nav">
@@ -148,7 +148,7 @@
     <div class="img-container">
         <picture>
             <source media="(max-width:650px)" srcset="img/mobile-project.png">
-            <img class="banner-image" src="img/project-stories.png" alt="banner-image">
+            <img class="banner-image" id='bannerImage' src="img/project-stories.png" alt="banner-image">
           </picture>
     </div>
 
@@ -301,15 +301,16 @@
                 </div>
 
                 <div class="second-card">
-                    Lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor
+                    His approach of embracing change and adapting to changing work situations encourages others to do the same! Simply Brilliant! 
                     <div class="commentor">
+                    
                         <div class="profile-image">
-                            <img src="img/logo-transparent.png" alt="">
+                            <img src="img/chisom.jpeg" alt="">
                         </div>  
 
                         <div class="statements">
-                            <h3 class="c-name">Abiose Imran</h3>
-                            <p>Senior Software engineer</p>
+                            <h3 class="c-name">Victor Igbor</h3>
+                            <p>Credit Risk Specialist</p>
                         </div>
 
                     </div> 
@@ -331,15 +332,15 @@
                 </div>
     
                 <div class="fourth-card">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, dolore quisquam! Dignissimos possimus aperiam cupiditate minima? Ipsam sed consequatur harum voluptatem fuga iure ex magni nam amet voluptates, sit dolore.
+                   I've worked with Imran on some projects, and I can say he is a versatile person to work with. He is calm and listen to needs as careful as possible. He deliver instructions and explain expectations with clarity and purpose!
                     <div class="commentor">
                         <div class="profile-image">
-                            <img src="img/pizza-5352320_640.png" alt="">
+                            <img src="img/hamzat.jpeg" alt="">
                         </div>  
 
                         <div class="statements">
-                            <h3 class="c-name">Avatar AAng</h3>
-                            <p>Senior Air Bender</p>
+                            <h3 class="c-name">Ibrahim Hamzat</h3>
+                            <p>Full Stack Engineer</p>
                         </div>
 
                     </div> 
@@ -462,7 +463,7 @@
         <div class="line-container">
             <div class="line"></div>
         </div>
-        <p class="copyright">© 2021 Abiose Imran</p>
+        <p class="copyright">© 2022 Abiose Imran</p>
     </footer>
 
 
@@ -480,14 +481,24 @@
             var scrolled = (scrollTops / scrollBottoms) * 100
             bars.style.width = scrolled + "%";
         }
+        // change images 
+        let images = document.getElementById("bannerImage");
+        let imagesArr = ['img/netflix-clone.png', 'img/project-japan.png']
+
+        setInterval(function(){
+            let random = Math.floor(Math.random() * 2)
+            images.src = imagesArr[random]
+        }, 3000)
     </script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
     <script>
         AOS.init({
-            offset: 400,
-            duration: 1000
+            offset: 300,
+            duration: 900
         });
+
     </script>
     <script src="js/index.js" defer></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>

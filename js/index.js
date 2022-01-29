@@ -68,3 +68,6 @@ window.addEventListener('ready', setTimeout(disappear, 8000))
 function disappear(){
     loader.classList.add('vanish');
 }
+
+
+
