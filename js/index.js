@@ -63,7 +63,7 @@ function scrollFunction() {
 
 // loader function 
 const loader = document.querySelector('.loader')
-window.addEventListener('ready', setTimeout(disappear, 8000))
+window.addEventListener('load', setTimeout(disappear, 4000))
 
 function disappear(){
     loader.classList.add('vanish');
