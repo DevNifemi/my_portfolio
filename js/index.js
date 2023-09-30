@@ -9,8 +9,8 @@ const whiteModeOn =() =>{
 }
 
 const darkModeOn = () =>{
-     document.body.classList.remove('white-mode');
-     localStorage.setItem('whiteMode', null)
+    document.body.classList.remove('white-mode');
+    localStorage.setItem('whiteMode', null)
 }
 
 if(whiteMode === "enabled"){
@@ -68,6 +68,3 @@ window.addEventListener('load', setTimeout(disappear, 4000))
 function disappear(){
     loader.classList.add('vanish');
 }
-
-
-
